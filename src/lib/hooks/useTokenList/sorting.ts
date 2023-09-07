@@ -1,4 +1,4 @@
-import { Token } from '@phuphamdeltalabs/sdk-core'
+import { Token } from '@phuphamdeltalabs/sdkcore'
 import { TokenInfo } from '@uniswap/token-lists'
 import { useMemo } from 'react'
 

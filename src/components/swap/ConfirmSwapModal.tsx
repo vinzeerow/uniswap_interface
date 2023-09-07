@@ -5,7 +5,7 @@ import {
   SwapEventName,
   SwapPriceUpdateUserResponse,
 } from '@uniswap/analytics-events'
-import { Currency, Percent } from '@phuphamdeltalabs/sdk-core'
+import { Currency, Percent } from '@phuphamdeltalabs/sdkcore'
 import { useWeb3React } from '@web3-react/core'
 import { sendAnalyticsEvent, Trace, useTrace } from 'analytics'
 import Badge from 'components/Badge'

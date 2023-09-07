@@ -1,4 +1,4 @@
-import { Currency } from '@phuphamdeltalabs/sdk-core'
+import { Currency } from '@phuphamdeltalabs/sdkcore'
 
 export const getTestSelector = (selectorId: string) => `[data-testid=${selectorId}]`
 

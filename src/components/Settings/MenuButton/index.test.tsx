@@ -1,4 +1,4 @@
-import { Percent } from '@phuphamdeltalabs/sdk-core'
+import { Percent } from '@phuphamdeltalabs/sdkcore'
 import { useUserSlippageTolerance } from 'state/user/hooks'
 import { SlippageTolerance } from 'state/user/types'
 import { mocked } from 'test-utils/mocked'

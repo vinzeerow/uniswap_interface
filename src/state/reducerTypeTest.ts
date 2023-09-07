@@ -1,4 +1,4 @@
-import { ChainId } from '@phuphamdeltalabs/sdk-core'
+import { ChainId } from '@phuphamdeltalabs/sdkcore'
 import { TokenList } from '@uniswap/token-lists'
 import { ConnectionType } from 'connection/types'
 import { SupportedLocale } from 'constants/locales'

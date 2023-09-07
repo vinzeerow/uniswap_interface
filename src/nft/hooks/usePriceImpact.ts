@@ -1,4 +1,4 @@
-import { Percent } from '@phuphamdeltalabs/sdk-core'
+import { Percent } from '@phuphamdeltalabs/sdkcore'
 import { useMemo } from 'react'
 import { ClassicTrade } from 'state/routing/types'
 import { useTheme } from 'styled-components'

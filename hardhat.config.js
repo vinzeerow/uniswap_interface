@@ -1,4 +1,4 @@
-import { ChainId } from '@phuphamdeltalabs/sdk-core'
+import { ChainId } from '@phuphamdeltalabs/sdkcore'
 import { UNIVERSAL_ROUTER_CREATION_BLOCK } from '@uniswap/universal-router-sdk'
 
 /* eslint-env node */

@@ -1,4 +1,4 @@
-import { Currency } from '@phuphamdeltalabs/sdk-core'
+import { Currency } from '@phuphamdeltalabs/sdkcore'
 import { TokenTradeInput } from 'graphql/data/__generated__/types-and-hooks'
 import { create } from 'zustand'
 import { devtools } from 'zustand/middleware'

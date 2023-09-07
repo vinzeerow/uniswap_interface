@@ -1,4 +1,4 @@
-import { Token } from '@phuphamdeltalabs/sdk-core'
+import { Token } from '@phuphamdeltalabs/sdkcore'
 import { FeeAmount, TICK_SPACINGS } from '@uniswap/v3-sdk'
 import { TickData } from 'graphql/thegraph/AllV3TicksQuery'
 import { TickProcessed } from 'hooks/usePoolTickData'

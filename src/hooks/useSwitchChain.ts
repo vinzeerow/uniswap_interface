@@ -1,4 +1,4 @@
-import { ChainId } from '@phuphamdeltalabs/sdk-core'
+import { ChainId } from '@phuphamdeltalabs/sdkcore'
 import { Connector } from '@web3-react/types'
 import { networkConnection, uniwalletWCV2ConnectConnection, walletConnectV2Connection } from 'connection'
 import { getChainInfo } from 'constants/chainInfo'

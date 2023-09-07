@@ -1,4 +1,4 @@
-import { Percent } from '@phuphamdeltalabs/sdk-core'
+import { Percent } from '@phuphamdeltalabs/sdkcore'
 
 import validateUserSlippageTolerance, {
   MAXIMUM_RECOMMENDED_SLIPPAGE,

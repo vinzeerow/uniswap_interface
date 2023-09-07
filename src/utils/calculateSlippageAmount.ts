@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Fraction, Percent } from '@phuphamdeltalabs/sdk-core'
+import { Currency, CurrencyAmount, Fraction, Percent } from '@phuphamdeltalabs/sdkcore'
 import JSBI from 'jsbi'
 
 const ONE = new Fraction(1, 1)

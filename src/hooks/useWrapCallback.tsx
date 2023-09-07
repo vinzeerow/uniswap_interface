@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
 import { InterfaceEventName } from '@uniswap/analytics-events'
-import { Currency } from '@phuphamdeltalabs/sdk-core'
+import { Currency } from '@phuphamdeltalabs/sdkcore'
 import { useWeb3React } from '@web3-react/core'
 import { sendAnalyticsEvent } from 'analytics'
 import useNativeCurrency from 'lib/hooks/useNativeCurrency'

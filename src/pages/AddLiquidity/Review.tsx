@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Price } from '@phuphamdeltalabs/sdk-core'
+import { Currency, CurrencyAmount, Price } from '@phuphamdeltalabs/sdkcore'
 import { Position } from '@uniswap/v3-sdk'
 import { AutoColumn } from 'components/Column'
 import { PositionPreview } from 'components/PositionPreview'

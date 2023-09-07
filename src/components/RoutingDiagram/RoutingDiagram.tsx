@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
 import { Protocol } from '@uniswap/router-sdk'
-import { Currency } from '@phuphamdeltalabs/sdk-core'
+import { Currency } from '@phuphamdeltalabs/sdkcore'
 import { FeeAmount } from '@uniswap/v3-sdk'
 import Badge from 'components/Badge'
 import DoubleCurrencyLogo from 'components/DoubleLogo'

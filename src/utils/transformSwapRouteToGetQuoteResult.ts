@@ -1,5 +1,5 @@
 import { Protocol } from '@uniswap/router-sdk'
-import { Currency, CurrencyAmount, TradeType } from '@phuphamdeltalabs/sdk-core'
+import { Currency, CurrencyAmount, TradeType } from '@phuphamdeltalabs/sdkcore'
 import { routeAmountsToString, SwapRoute } from '@uniswap/smart-order-router'
 import { Pool } from '@uniswap/v3-sdk'
 import { QuoteResult, QuoteState, URAQuoteType } from 'state/routing/types'

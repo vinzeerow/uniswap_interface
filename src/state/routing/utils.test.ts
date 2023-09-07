@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@phuphamdeltalabs/sdk-core'
+import { ChainId, Token } from '@phuphamdeltalabs/sdkcore'
 import { nativeOnChain } from 'constants/tokens'
 
 import { PoolType } from './types'

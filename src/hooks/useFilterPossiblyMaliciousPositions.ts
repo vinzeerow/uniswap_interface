@@ -1,4 +1,4 @@
-import { Token } from '@phuphamdeltalabs/sdk-core'
+import { Token } from '@phuphamdeltalabs/sdkcore'
 import { useWeb3React } from '@web3-react/core'
 import { useMemo } from 'react'
 import { PositionDetails } from 'types/position'

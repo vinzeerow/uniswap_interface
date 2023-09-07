@@ -1,4 +1,4 @@
-import { Price, WETH9 } from '@phuphamdeltalabs/sdk-core'
+import { Price, WETH9 } from '@phuphamdeltalabs/sdkcore'
 import { USDC_MAINNET } from 'constants/tokens'
 import { Field } from 'state/mint/actions'
 import { render, screen } from 'test-utils/render'

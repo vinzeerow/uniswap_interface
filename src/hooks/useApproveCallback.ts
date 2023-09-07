@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount } from '@phuphamdeltalabs/sdk-core'
+import { Currency, CurrencyAmount } from '@phuphamdeltalabs/sdkcore'
 import { ApprovalState, useApproval } from 'lib/hooks/useApproval'
 import { useCallback } from 'react'
 

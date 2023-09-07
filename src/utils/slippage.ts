@@ -1,4 +1,4 @@
-import { Percent } from '@phuphamdeltalabs/sdk-core'
+import { Percent } from '@phuphamdeltalabs/sdkcore'
 
 const PRECISION = 10_000
 const DENOMINATOR = PRECISION * 100

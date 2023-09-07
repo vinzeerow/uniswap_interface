@@ -1,4 +1,4 @@
-import { ChainId, NativeCurrency, Token } from '@phuphamdeltalabs/sdk-core'
+import { ChainId, NativeCurrency, Token } from '@phuphamdeltalabs/sdkcore'
 import { nativeOnChain } from 'constants/tokens'
 import { useMemo } from 'react'
 

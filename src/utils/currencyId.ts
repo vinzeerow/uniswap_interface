@@ -1,4 +1,4 @@
-import { Currency } from '@phuphamdeltalabs/sdk-core'
+import { Currency } from '@phuphamdeltalabs/sdkcore'
 
 export function currencyId(currency: Currency): string {
   if (currency.isNative) return 'ETH'

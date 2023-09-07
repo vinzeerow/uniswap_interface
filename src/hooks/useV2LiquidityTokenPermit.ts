@@ -1,4 +1,4 @@
-import { CurrencyAmount, Token } from '@phuphamdeltalabs/sdk-core'
+import { CurrencyAmount, Token } from '@phuphamdeltalabs/sdkcore'
 
 import { PermitInfo, PermitType, useERC20Permit } from './useERC20Permit'
 import useTransactionDeadline from './useTransactionDeadline'

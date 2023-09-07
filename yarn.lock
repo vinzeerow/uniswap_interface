@@ -4273,10 +4273,10 @@
     tslib "^2.5.0"
     webcrypto-core "^1.7.7"
 
-"@phuphamdeltalabs/sdk-core@^4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@phuphamdeltalabs/sdk-core/-/sdk-core-4.0.1.tgz#f5c952694a7b353d8229e9086c42995da9eba83b"
-  integrity sha512-hDyIhKM1ZpGxVLxla2o9mHzyEvqZrD6np7BKmW5ncwUj7xzpB+bv+Li9t3xe4SBGOtiGlJfJAlxNWF5PTkoUmA==
+"@phuphamdeltalabs/sdkcore@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@phuphamdeltalabs/sdkcore/-/sdkcore-1.0.6.tgz#9f6be390d6cbe03cf738e321e608c2122b277e69"
+  integrity sha512-zMjM9UclWvitIlF/qkuewdvthdEWSRP1isrsOZNamuLCLhCT+QA8SWx5ZA2UF1YrrCFiM1uDK7Ajhk+ztcWWwA==
   dependencies:
     "@ethersproject/address" "^5.0.2"
     big.js "^5.2.2"
@@ -5995,7 +5995,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^18.0.15":
+"@types/react@*", "@types/react@^18.2.21":
   version "18.2.21"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.21.tgz#774c37fd01b522d0b91aed04811b58e4e0514ed9"
   integrity sha512-neFKG/sBAwGxHgXiIxnbm3/AAVQ/cMRS93hvBpg8xYRbeQSPVABp9U2bRnPf0iI4+Ucdv3plSxKK+3CW2ENJxA==

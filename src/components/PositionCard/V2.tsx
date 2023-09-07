@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { CurrencyAmount, Percent, Token } from '@phuphamdeltalabs/sdk-core'
+import { CurrencyAmount, Percent, Token } from '@phuphamdeltalabs/sdkcore'
 import { Pair } from '@uniswap/v2-sdk'
 import { useWeb3React } from '@web3-react/core'
 import JSBI from 'jsbi'

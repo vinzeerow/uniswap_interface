@@ -1,4 +1,4 @@
-import { Currency, Token } from '@phuphamdeltalabs/sdk-core'
+import { Currency, Token } from '@phuphamdeltalabs/sdkcore'
 import { FeeAmount } from '@uniswap/v3-sdk'
 import useBlockNumber from 'lib/hooks/useBlockNumber'
 import ms from 'ms'

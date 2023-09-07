@@ -1,4 +1,4 @@
-import { ChainId } from '@phuphamdeltalabs/sdk-core'
+import { ChainId } from '@phuphamdeltalabs/sdkcore'
 
 import { Chain } from './__generated__/types-and-hooks'
 import { isSupportedGQLChain, supportedChainIdFromGQLChain } from './util'

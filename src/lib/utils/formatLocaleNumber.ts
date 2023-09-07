@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Price } from '@phuphamdeltalabs/sdk-core'
+import { Currency, CurrencyAmount, Price } from '@phuphamdeltalabs/sdkcore'
 import { DEFAULT_LOCALE, SUPPORTED_LOCALES } from 'constants/locales'
 
 interface FormatLocaleNumberArgs {

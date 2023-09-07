@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount } from '@phuphamdeltalabs/sdk-core'
+import { Currency, CurrencyAmount } from '@phuphamdeltalabs/sdkcore'
 import Column from 'components/Column'
 import CurrencyLogo from 'components/Logo/CurrencyLogo'
 import Row from 'components/Row'

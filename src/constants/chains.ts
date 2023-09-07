@@ -1,4 +1,4 @@
-import { ChainId, SUPPORTED_CHAINS, SupportedChainsType } from '@phuphamdeltalabs/sdk-core'
+import { ChainId, SUPPORTED_CHAINS, SupportedChainsType } from '@phuphamdeltalabs/sdkcore'
 
 export const UniWalletSupportedChains = [
   ChainId.MAINNET,

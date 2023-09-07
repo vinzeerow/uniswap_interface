@@ -1,4 +1,4 @@
-import { Currency } from '@phuphamdeltalabs/sdk-core'
+import { Currency } from '@phuphamdeltalabs/sdkcore'
 import { useWeb3React } from '@web3-react/core'
 import { useMemo } from 'react'
 import { useCombinedActiveList } from 'state/lists/hooks'

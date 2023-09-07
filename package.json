@@ -102,7 +102,7 @@
     "@types/multicodec": "^1.0.0",
     "@types/node": "^13.13.5",
     "@types/qs": "^6.9.2",
-    "@types/react": "^18.0.15",
+    "@types/react": "^18.2.21",
     "@types/react-dom": "^18.0.6",
     "@types/react-redux": "^7.1.24",
     "@types/react-router-dom": "^5.3.3",
@@ -182,7 +182,7 @@
     "@looksrare/sdk": "^0.10.2",
     "@metamask/jazzicon": "^2.0.0",
     "@opensea/seaport-js": "^1.2.0",
-    "@phuphamdeltalabs/sdk-core": "^4.0.1",
+    "@phuphamdeltalabs/sdkcore": "^1.0.6",
     "@popperjs/core": "^2.4.4",
     "@reach/dialog": "^0.10.3",
     "@reach/portal": "^0.10.3",
@@ -297,8 +297,6 @@
     "zustand": "^4.3.6"
   },
   "engines": {
-    "npm": "please-use-yarn",
-    "node": "16.x",
-    "yarn": ">=1.22"
+    "node": "16.x"
   }
 }

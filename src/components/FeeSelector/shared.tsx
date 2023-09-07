@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { ChainId, SUPPORTED_CHAINS } from '@phuphamdeltalabs/sdk-core'
+import { ChainId, SUPPORTED_CHAINS } from '@phuphamdeltalabs/sdkcore'
 import { FeeAmount } from '@uniswap/v3-sdk'
 import type { ReactNode } from 'react'
 

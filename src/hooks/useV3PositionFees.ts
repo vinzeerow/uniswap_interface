@@ -1,5 +1,5 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { Currency, CurrencyAmount } from '@phuphamdeltalabs/sdk-core'
+import { Currency, CurrencyAmount } from '@phuphamdeltalabs/sdkcore'
 import { Pool } from '@uniswap/v3-sdk'
 import { useSingleCallResult } from 'lib/hooks/multicall'
 import useBlockNumber from 'lib/hooks/useBlockNumber'

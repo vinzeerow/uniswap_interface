@@ -1,4 +1,4 @@
-import { CurrencyAmount, Percent, Token } from '@phuphamdeltalabs/sdk-core'
+import { CurrencyAmount, Percent, Token } from '@phuphamdeltalabs/sdkcore'
 import { useMemo } from 'react'
 import { InterfaceTrade } from 'state/routing/types'
 

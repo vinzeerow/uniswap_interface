@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { Currency, Price } from '@phuphamdeltalabs/sdk-core'
+import { Currency, Price } from '@phuphamdeltalabs/sdkcore'
 import { useLocalCurrencyPrice } from 'hooks/useLocalCurrencyPrice'
 import tryParseCurrencyAmount from 'lib/utils/tryParseCurrencyAmount'
 import { useCallback, useMemo, useState } from 'react'

@@ -1,4 +1,4 @@
-import { Price, Token } from '@phuphamdeltalabs/sdk-core'
+import { Price, Token } from '@phuphamdeltalabs/sdkcore'
 import {
   encodeSqrtRatioX96,
   FeeAmount,

@@ -1,4 +1,4 @@
-import { ChainId, CurrencyAmount } from '@phuphamdeltalabs/sdk-core'
+import { ChainId, CurrencyAmount } from '@phuphamdeltalabs/sdkcore'
 
 import { DAI, nativeOnChain, USDC_MAINNET } from '../../../src/constants/tokens'
 import { getTestSelector } from '../../utils'

@@ -1,5 +1,5 @@
 import { AddressZero } from '@ethersproject/constants'
-import { CurrencyAmount, Percent, Token } from '@phuphamdeltalabs/sdk-core'
+import { CurrencyAmount, Percent, Token } from '@phuphamdeltalabs/sdkcore'
 
 import { calculateSlippageAmount } from './calculateSlippageAmount'
 

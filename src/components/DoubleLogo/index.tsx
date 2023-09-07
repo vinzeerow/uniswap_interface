@@ -1,4 +1,4 @@
-import { Currency } from '@phuphamdeltalabs/sdk-core'
+import { Currency } from '@phuphamdeltalabs/sdkcore'
 import styled from 'styled-components'
 
 import CurrencyLogo from '../Logo/CurrencyLogo'

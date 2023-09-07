@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
 import { InterfacePageName } from '@uniswap/analytics-events'
-import { Currency, CurrencyAmount, Token } from '@phuphamdeltalabs/sdk-core'
+import { Currency, CurrencyAmount, Token } from '@phuphamdeltalabs/sdkcore'
 import { useWeb3React } from '@web3-react/core'
 import { Trace } from 'analytics'
 import { V2Unsupported } from 'components/V2Unsupported'

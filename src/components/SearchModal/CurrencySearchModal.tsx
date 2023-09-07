@@ -1,4 +1,4 @@
-import { Currency, Token } from '@phuphamdeltalabs/sdk-core'
+import { Currency, Token } from '@phuphamdeltalabs/sdkcore'
 import TokenSafety from 'components/TokenSafety'
 import { memo, useCallback, useEffect, useState } from 'react'
 import { useUserAddedTokens } from 'state/user/hooks'

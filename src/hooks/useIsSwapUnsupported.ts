@@ -1,4 +1,4 @@
-import { Currency } from '@phuphamdeltalabs/sdk-core'
+import { Currency } from '@phuphamdeltalabs/sdkcore'
 import { useMemo } from 'react'
 
 import { useUnsupportedTokens } from './Tokens'

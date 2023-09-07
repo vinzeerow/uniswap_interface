@@ -1,4 +1,4 @@
-import { ChainId } from '@phuphamdeltalabs/sdk-core'
+import { ChainId } from '@phuphamdeltalabs/sdkcore'
 import { Web3ReactHooks } from '@web3-react/core'
 import { Connector } from '@web3-react/types'
 import { useAppDispatch, useAppSelector } from 'state/hooks'

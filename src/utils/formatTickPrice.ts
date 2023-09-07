@@ -1,4 +1,4 @@
-import { Price, Token } from '@phuphamdeltalabs/sdk-core'
+import { Price, Token } from '@phuphamdeltalabs/sdkcore'
 import { formatPrice, NumberType } from 'utils/formatNumbers'
 
 import { Bound } from '../state/mint/v3/actions'

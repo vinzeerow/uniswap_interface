@@ -1,4 +1,4 @@
-import { Currency, Token } from '@phuphamdeltalabs/sdk-core'
+import { Currency, Token } from '@phuphamdeltalabs/sdkcore'
 import { Tags, TokenInfo, TokenList } from '@uniswap/token-lists'
 
 import { isAddress } from '../../utils'

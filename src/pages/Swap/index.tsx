@@ -8,7 +8,7 @@ import {
   SharedEventName,
   SwapEventName,
 } from '@uniswap/analytics-events'
-import { ChainId, Currency, CurrencyAmount, Percent, Token } from '@phuphamdeltalabs/sdk-core'
+import { ChainId, Currency, CurrencyAmount, Percent, Token } from '@phuphamdeltalabs/sdkcore'
 import { UNIVERSAL_ROUTER_ADDRESS } from '@uniswap/universal-router-sdk'
 import { useWeb3React } from '@web3-react/core'
 import { sendAnalyticsEvent, Trace, TraceEvent, useTrace } from 'analytics'

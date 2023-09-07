@@ -1,4 +1,4 @@
-import { TradeType } from '@phuphamdeltalabs/sdk-core'
+import { TradeType } from '@phuphamdeltalabs/sdkcore'
 import { UniswapXOrderStatus } from 'lib/hooks/orders/types'
 import { createStore, Store } from 'redux'
 

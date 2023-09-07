@@ -1,4 +1,4 @@
-import { ChainId as MockChainId } from '@phuphamdeltalabs/sdk-core'
+import { ChainId as MockChainId } from '@phuphamdeltalabs/sdkcore'
 import {
   DAI as MockDAI,
   USDC_MAINNET as MockUSDC_MAINNET,

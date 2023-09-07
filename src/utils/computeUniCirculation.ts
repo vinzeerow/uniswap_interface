@@ -1,5 +1,5 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { CurrencyAmount, Token } from '@phuphamdeltalabs/sdk-core'
+import { CurrencyAmount, Token } from '@phuphamdeltalabs/sdkcore'
 import JSBI from 'jsbi'
 
 import { STAKING_GENESIS } from '../state/stake/hooks'

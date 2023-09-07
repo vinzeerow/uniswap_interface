@@ -1,5 +1,5 @@
 import { act } from '@testing-library/react'
-import { Percent } from '@phuphamdeltalabs/sdk-core'
+import { Percent } from '@phuphamdeltalabs/sdkcore'
 import { USDC_MAINNET } from 'constants/tokens'
 import store from 'state'
 import { RouterPreference } from 'state/routing/types'
