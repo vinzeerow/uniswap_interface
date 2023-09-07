@@ -8,13 +8,15 @@ rulesDirPlugin.RULES_DIR = 'eslint_rules'
 
 module.exports = {
   extends: ['@uniswap/eslint-config/react'],
-  plugins: ['rulesdir'],
+  plugins: ['rulesdir','simple-import-sort'],
   overrides: [
     {
       files: ['**/*'],
       rules: {
         'multiline-comment-style': ['error', 'separate-lines'],
         'prettier/prettier': ['off', { singleQuote: true }],
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error",
         'rulesdir/no-undefined-or': 'error',
       },
     },
@@ -31,6 +33,8 @@ module.exports = {
       rules: {
         '@typescript-eslint/no-restricted-imports': ['error', restrictedImports],
         'prettier/prettier': ['off', { singleQuote: true }],
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error",
         'import/no-restricted-paths': [
           'error',
           {
@@ -77,6 +81,8 @@ module.exports = {
           },
         ],
         'prettier/prettier': ['off', { singleQuote: true }],
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error"
       },
     },
   ],

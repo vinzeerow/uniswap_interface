@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery, FetchBaseQueryError } from '@reduxjs/toolkit/query/react'
 import { Protocol } from '@uniswap/router-sdk'
-import { TradeType } from '@uniswap/sdk-core'
+import { TradeType } from '@phuphamdeltalabs/sdk-core'
 import { sendAnalyticsEvent } from 'analytics'
 import { isUniswapXSupportedChain } from 'constants/chains'
 import { getClientSideQuote } from 'lib/hooks/routing/clientSideSmartOrderRouter'

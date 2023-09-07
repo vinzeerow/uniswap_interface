@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@phuphamdeltalabs/sdk-core'
 
 import { getChainPriority } from './chains'
 
