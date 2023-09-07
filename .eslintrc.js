@@ -14,6 +14,7 @@ module.exports = {
       files: ['**/*'],
       rules: {
         'multiline-comment-style': ['error', 'separate-lines'],
+        'prettier/prettier': ['off', { singleQuote: true }],
         'rulesdir/no-undefined-or': 'error',
       },
     },
@@ -29,6 +30,7 @@ module.exports = {
       files: ['**/*.ts', '**/*.tsx'],
       rules: {
         '@typescript-eslint/no-restricted-imports': ['error', restrictedImports],
+        'prettier/prettier': ['off', { singleQuote: true }],
         'import/no-restricted-paths': [
           'error',
           {
@@ -74,6 +76,7 @@ module.exports = {
             ],
           },
         ],
+        'prettier/prettier': ['off', { singleQuote: true }],
       },
     },
   ],
