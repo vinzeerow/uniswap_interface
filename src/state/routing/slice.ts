@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery, FetchBaseQueryError } from '@reduxjs/toolkit/query/react'
-import { Protocol } from '@uniswap/router-sdk'
+import { Protocol } from '@phuphamdeltalabs/router-sdk'
 import { TradeType } from '@phuphamdeltalabs/sdkcore'
 import { sendAnalyticsEvent } from 'analytics'
 import { isUniswapXSupportedChain } from 'constants/chains'

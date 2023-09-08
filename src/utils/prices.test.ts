@@ -1,6 +1,6 @@
-import { Trade } from '@uniswap/router-sdk'
+import { Trade } from '@phuphamdeltalabs/router-sdk'
 import { CurrencyAmount, Percent, TradeType } from '@phuphamdeltalabs/sdkcore'
-import { Pair, Route as V2Route } from '@uniswap/v2-sdk'
+import { Pair, Route as V2Route } from '@phuphamdeltalabs/v2-sdk'
 import { Route as V3Route } from '@phuphamdeltalabs/v3sdk'
 import JSBI from 'jsbi'
 import {

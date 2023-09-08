@@ -1,6 +1,6 @@
-import { Trade } from '@uniswap/router-sdk'
+import { Trade } from '@phuphamdeltalabs/router-sdk'
 import { Currency, CurrencyAmount, Fraction, Percent, TradeType } from '@phuphamdeltalabs/sdkcore'
-import { Pair } from '@uniswap/v2-sdk'
+import { Pair } from '@phuphamdeltalabs/v2-sdk'
 import { FeeAmount } from '@phuphamdeltalabs/v3sdk'
 import JSBI from 'jsbi'
 import { DefaultTheme } from 'styled-components'

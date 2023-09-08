@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { Protocol } from '@uniswap/router-sdk'
+import { Protocol } from '@phuphamdeltalabs/router-sdk'
 import { Currency } from '@phuphamdeltalabs/sdkcore'
 import { FeeAmount } from '@phuphamdeltalabs/v3sdk'
 import Badge from 'components/Badge'

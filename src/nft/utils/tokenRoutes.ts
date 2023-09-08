@@ -1,6 +1,6 @@
-import { IRoute, Protocol } from '@uniswap/router-sdk'
+import { IRoute, Protocol } from '@phuphamdeltalabs/router-sdk'
 import { Currency, CurrencyAmount } from '@phuphamdeltalabs/sdkcore'
-import { Pair } from '@uniswap/v2-sdk'
+import { Pair } from '@phuphamdeltalabs/v2-sdk'
 import { Pool } from '@phuphamdeltalabs/v3sdk'
 import { TokenAmountInput, TokenTradeRouteInput, TradePoolInput } from 'graphql/data/__generated__/types-and-hooks'
 import { ClassicTrade } from 'state/routing/types'

@@ -1,7 +1,7 @@
 import { Trans } from '@lingui/macro'
 import { BrowserEvent, InterfaceElementName, SwapEventName } from '@uniswap/analytics-events'
 import { Currency, CurrencyAmount } from '@phuphamdeltalabs/sdkcore'
-import { Pair } from '@uniswap/v2-sdk'
+import { Pair } from '@phuphamdeltalabs/v2-sdk'
 import { useWeb3React } from '@web3-react/core'
 import { TraceEvent } from 'analytics'
 import { LoadingOpacityContainer, loadingOpacityMixin } from 'components/Loader/styled'
