@@ -10,7 +10,7 @@ import {
   TICK_SPACINGS,
   TickMath,
   tickToPrice,
-} from '@uniswap/v3-sdk'
+} from '@phuphamdeltalabs/v3sdk'
 import { useWeb3React } from '@web3-react/core'
 import { usePool } from 'hooks/usePools'
 import JSBI from 'jsbi'

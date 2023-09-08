@@ -1,7 +1,7 @@
 import { Protocol } from '@uniswap/router-sdk'
 import { Currency, Percent, TradeType } from '@phuphamdeltalabs/sdkcore'
 import { Pair } from '@uniswap/v2-sdk'
-import { FeeAmount } from '@uniswap/v3-sdk'
+import { FeeAmount } from '@phuphamdeltalabs/v3sdk'
 import { ClassicTrade } from 'state/routing/types'
 
 export interface RoutingDiagramEntry {

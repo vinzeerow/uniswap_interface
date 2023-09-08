@@ -1,5 +1,5 @@
 import { Currency, Token } from '@phuphamdeltalabs/sdkcore'
-import { FeeAmount } from '@uniswap/v3-sdk'
+import { FeeAmount } from '@phuphamdeltalabs/v3sdk'
 import useBlockNumber from 'lib/hooks/useBlockNumber'
 import ms from 'ms'
 import { useMemo } from 'react'

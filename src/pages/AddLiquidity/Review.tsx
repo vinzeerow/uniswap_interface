@@ -1,5 +1,5 @@
 import { Currency, CurrencyAmount, Price } from '@phuphamdeltalabs/sdkcore'
-import { Position } from '@uniswap/v3-sdk'
+import { Position } from '@phuphamdeltalabs/v3sdk'
 import { AutoColumn } from 'components/Column'
 import { PositionPreview } from 'components/PositionPreview'
 import styled from 'styled-components'

@@ -4,7 +4,7 @@ import { ChainId, Currency, CurrencyAmount, Token, TradeType } from '@phuphamdel
 import { AlphaRouter } from '@uniswap/smart-order-router'
 import { DutchOrderInfo, DutchOrderInfoJSON } from '@uniswap/uniswapx-sdk'
 import { Pair, Route as V2Route } from '@uniswap/v2-sdk'
-import { FeeAmount, Pool, Route as V3Route } from '@uniswap/v3-sdk'
+import { FeeAmount, Pool, Route as V3Route } from '@phuphamdeltalabs/v3sdk'
 import { asSupportedChain } from 'constants/chains'
 import { RPC_PROVIDERS } from 'constants/providers'
 import { isAvalanche, isBsc, isMatic, nativeOnChain } from 'constants/tokens'

@@ -1,5 +1,5 @@
 import { Currency } from '@phuphamdeltalabs/sdkcore'
-import { FeeAmount } from '@uniswap/v3-sdk'
+import { FeeAmount } from '@phuphamdeltalabs/v3sdk'
 import { TickProcessed, usePoolActiveLiquidity } from 'hooks/usePoolTickData'
 import { useCallback, useMemo } from 'react'
 

@@ -18,6 +18,8 @@ module.exports = {
         "simple-import-sort/imports": "error",
         "simple-import-sort/exports": "error",
         'rulesdir/no-undefined-or': 'error',
+        "import/no-unresolved": 0,
+        "no-console": ["warn", { "allow": ["info", "warn", "error", "debug", "log"] }],
       },
     },
     {
@@ -35,6 +37,8 @@ module.exports = {
         'prettier/prettier': ['off', { singleQuote: true }],
         "simple-import-sort/imports": "error",
         "simple-import-sort/exports": "error",
+        "import/no-unresolved": 0,
+        "no-console": ["warn", { "allow": ["info", "warn", "error", "debug", "log"] }],
         'import/no-restricted-paths': [
           'error',
           {
@@ -82,7 +86,9 @@ module.exports = {
         ],
         'prettier/prettier': ['off', { singleQuote: true }],
         "simple-import-sort/imports": "error",
-        "simple-import-sort/exports": "error"
+        "simple-import-sort/exports": "error",
+        "import/no-unresolved": 0,
+        "no-console": ["warn", { "allow": ["info", "warn", "error", "debug", "log"] }],
       },
     },
   ],
