@@ -1,6 +1,6 @@
 import { MixedRouteSDK, ONE, Protocol, Trade } from '@uniswap/router-sdk'
 import { ChainId, Currency, CurrencyAmount, Fraction, Percent, Token, TradeType } from '@phuphamdeltalabs/sdkcore'
-import { DutchOrderInfo, DutchOrderInfoJSON, DutchOrderTrade as IDutchOrderTrade } from '@uniswap/uniswapx-sdk'
+import { DutchOrderInfo, DutchOrderInfoJSON, DutchOrderTrade as IDutchOrderTrade } from '@phuphamdeltalabs/uniswapx-sdk'
 import { Route as V2Route } from '@uniswap/v2-sdk'
 import { Route as V3Route } from '@phuphamdeltalabs/v3sdk'
 

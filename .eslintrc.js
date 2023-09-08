@@ -8,15 +8,13 @@ rulesDirPlugin.RULES_DIR = 'eslint_rules'
 
 module.exports = {
   extends: ['@uniswap/eslint-config/react'],
-  plugins: ['rulesdir','simple-import-sort'],
+  plugins: ['rulesdir'],
   overrides: [
     {
       files: ['**/*'],
       rules: {
         'multiline-comment-style': ['error', 'separate-lines'],
         'prettier/prettier': ['off', { singleQuote: true }],
-        "simple-import-sort/imports": "error",
-        "simple-import-sort/exports": "error",
         'rulesdir/no-undefined-or': 'error',
         "import/no-unresolved": 0,
         "no-console": ["warn", { "allow": ["info", "warn", "error", "debug", "log"] }],
@@ -35,8 +33,6 @@ module.exports = {
       rules: {
         '@typescript-eslint/no-restricted-imports': ['error', restrictedImports],
         'prettier/prettier': ['off', { singleQuote: true }],
-        "simple-import-sort/imports": "error",
-        "simple-import-sort/exports": "error",
         "import/no-unresolved": 0,
         "no-console": ["warn", { "allow": ["info", "warn", "error", "debug", "log"] }],
         'import/no-restricted-paths': [
@@ -85,8 +81,6 @@ module.exports = {
           },
         ],
         'prettier/prettier': ['off', { singleQuote: true }],
-        "simple-import-sort/imports": "error",
-        "simple-import-sort/exports": "error",
         "import/no-unresolved": 0,
         "no-console": ["warn", { "allow": ["info", "warn", "error", "debug", "log"] }],
       },
