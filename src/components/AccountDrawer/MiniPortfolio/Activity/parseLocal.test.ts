@@ -1,5 +1,5 @@
 import { ChainId, Token, TradeType as MockTradeType } from '@phuphamdeltalabs/sdkcore'
-import { PERMIT2_ADDRESS } from '@uniswap/universal-router-sdk'
+import { PERMIT2_ADDRESS } from '@phuphamdeltalabs/universal-router-sdk'
 import { DAI as MockDAI, nativeOnChain, USDC_MAINNET as MockUSDC_MAINNET, USDT as MockUSDT } from 'constants/tokens'
 import { TransactionStatus as MockTxStatus } from 'graphql/data/__generated__/types-and-hooks'
 import { ChainTokenMap } from 'hooks/Tokens'

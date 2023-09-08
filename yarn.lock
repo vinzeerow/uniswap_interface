@@ -6452,7 +6452,7 @@
     tiny-invariant "^1.1.0"
     toformat "^2.0.0"
 
-"@uniswap/smart-order-router@^3.15.0":
+"@uniswap/smart-order-router@^3.16.21":
   version "3.16.21"
   resolved "https://registry.yarnpkg.com/@uniswap/smart-order-router/-/smart-order-router-3.16.21.tgz#2bc417feec9b4093237ab4a6cb03937260bb710d"
   integrity sha512-1dHqbv+35efK+WNp2tB0O2obD5C1E18/kKkyqkASHyqiaf8DcyFUqyPa9+VqGZnl2sJkjDUtmKg+qGvYFORPzQ==
@@ -6464,7 +6464,7 @@
     "@uniswap/swap-router-contracts" "^1.3.0"
     "@uniswap/token-lists" "^1.0.0-beta.31"
     "@uniswap/universal-router" "^1.0.1"
-    "@uniswap/universal-router-sdk" "^1.5.7"
+    "@phuphamdeltalabs/universal-router-sdk" "^1.5.7"
     "@uniswap/v2-sdk" "^3.2.0"
     "@uniswap/v3-sdk" "^3.10.0"
     async-retry "^1.3.1"
@@ -6508,9 +6508,9 @@
   resolved "https://registry.yarnpkg.com/@uniswap/token-lists/-/token-lists-1.0.0-beta.33.tgz#966ba96c9ccc8f0e9e09809890b438203f2b1911"
   integrity sha512-JQkXcpRI3jFG8y3/CGC4TS8NkDgcxXaOQuYW8Qdvd6DcDiIyg2vVYCG9igFEzF0G6UvxgHkBKC7cWCgzZNYvQg==
 
-"@uniswap/universal-router-sdk@^1.5.4", "@uniswap/universal-router-sdk@^1.5.6", "@uniswap/universal-router-sdk@^1.5.7":
+"@phuphamdeltalabs/universal-router-sdk@^1.5.4", "@phuphamdeltalabs/universal-router-sdk@^1.5.6", "@phuphamdeltalabs/universal-router-sdk@^1.5.7":
   version "1.5.7"
-  resolved "https://registry.yarnpkg.com/@uniswap/universal-router-sdk/-/universal-router-sdk-1.5.7.tgz#d79dedcdf66197695d57ef8c80336da807488871"
+  resolved "https://registry.yarnpkg.com/@phuphamdeltalabs/universal-router-sdk/-/universal-router-sdk-1.5.7.tgz#d79dedcdf66197695d57ef8c80336da807488871"
   integrity sha512-5T08dTZoAEN3W7fw467WoNwzfF8Ks5+t4/l0xVAhadUNq6UB/Ng9q5P70j+D+FVLwZbcbyv5zIkPtooADfjEKw==
   dependencies:
     "@uniswap/permit2-sdk" "^1.2.0"
@@ -9877,7 +9877,7 @@ cypress-hardhat@^2.5.0:
   dependencies:
     "@uniswap/permit2-sdk" "^1.2.0"
     "@uniswap/sdk-core" ">= 3"
-    "@uniswap/universal-router-sdk" "^1.5.4"
+    "@phuphamdeltalabs/universal-router-sdk" "^1.5.4"
 
 cypress@*:
   version "13.1.0"

@@ -1,5 +1,5 @@
 import { ChainId } from '@phuphamdeltalabs/sdkcore'
-import { UNIVERSAL_ROUTER_CREATION_BLOCK } from '@uniswap/universal-router-sdk'
+import { UNIVERSAL_ROUTER_CREATION_BLOCK } from '@phuphamdeltalabs/universal-router-sdk'
 
 /* eslint-env node */
 require('dotenv').config()
