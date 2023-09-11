@@ -1,6 +1,6 @@
 import { ChainId, CurrencyAmount, Percent, Token, TradeType } from '@phuphamdeltalabs/sdkcore'
+import { V3Route } from '@phuphamdeltalabs/smart-order-router'
 import { FeeAmount, Pool } from '@phuphamdeltalabs/v3sdk'
-import { V3Route } from '@uniswap/smart-order-router'
 import { ZERO_PERCENT } from 'constants/misc'
 import { nativeOnChain } from 'constants/tokens'
 import { BigNumber } from 'ethers/lib/ethers'

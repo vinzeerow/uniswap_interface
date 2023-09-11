@@ -1,7 +1,7 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { MixedRouteSDK } from '@phuphamdeltalabs/router-sdk'
 import { ChainId, Currency, CurrencyAmount, Token, TradeType } from '@phuphamdeltalabs/sdkcore'
-import { AlphaRouter } from '@uniswap/smart-order-router'
+import { AlphaRouter } from '@phuphamdeltalabs/smart-order-router'
 import { DutchOrderInfo, DutchOrderInfoJSON } from '@phuphamdeltalabs/uniswapx-sdk'
 import { Pair, Route as V2Route } from '@phuphamdeltalabs/v2-sdk'
 import { FeeAmount, Pool, Route as V3Route } from '@phuphamdeltalabs/v3sdk'

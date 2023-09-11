@@ -1,6 +1,6 @@
 import { QueryResult } from '@apollo/client'
-import * as Sentry from '@sentry/react'
 import { ChainId, Currency, Token } from '@phuphamdeltalabs/sdkcore'
+import * as Sentry from '@sentry/react'
 import { AVERAGE_L1_BLOCK_TIME } from 'constants/chainInfo'
 import { NATIVE_CHAIN_ID, nativeOnChain, WRAPPED_NATIVE_CURRENCY } from 'constants/tokens'
 import ms from 'ms'
@@ -17,6 +17,7 @@ export enum PollingInterval {
 }
 
 // Polls a query only when the current component is mounted, as useQuery's pollInterval prop will continue to poll after unmount
+// @ts-ignore
 export function usePollQueryWhileMounted<T, K>(queryResult: QueryResult<T, K>, interval: PollingInterval) {
   const { startPolling, stopPolling } = queryResult
 

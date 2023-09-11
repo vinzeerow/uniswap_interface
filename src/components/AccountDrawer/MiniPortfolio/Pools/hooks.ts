@@ -4,7 +4,7 @@ import {
   NONFUNGIBLE_POSITION_MANAGER_ADDRESSES as V3NFT_ADDRESSES,
   Token,
 } from '@phuphamdeltalabs/sdkcore'
-import { AddressMap } from '@uniswap/smart-order-router'
+import { AddressMap } from '@phuphamdeltalabs/smart-order-router'
 import MulticallJSON from '@uniswap/v3-periphery/artifacts/contracts/lens/UniswapInterfaceMulticall.sol/UniswapInterfaceMulticall.json'
 import NFTPositionManagerJSON from '@uniswap/v3-periphery/artifacts/contracts/NonfungiblePositionManager.sol/NonfungiblePositionManager.json'
 import { useWeb3React } from '@web3-react/core'

@@ -165,7 +165,7 @@
     "yarn-deduplicate": "^6.0.0"
   },
   "dependencies": {
-    "@apollo/client": "^3.7.2",
+    "@apollo/client": "^3.7.1",
     "@coinbase/wallet-sdk": "^3.6.4",
     "@fontsource/ibm-plex-mono": "^4.5.1",
     "@fontsource/inter": "^4.5.1",
@@ -202,7 +202,7 @@
     "@uniswap/merkle-distributor": "^1.0.1",
     "@uniswap/permit2-sdk": "^1.2.0",
     "@uniswap/redux-multicall": "^1.1.8",
-    "@uniswap/smart-order-router": "^3.16.21",
+    "@phuphamdeltalabs/smart-order-router": "^2.0.0",
     "@uniswap/token-lists": "^1.0.0-beta.33",
     "@phuphamdeltalabs/universal-router-sdk": "^1.0.1",
     "@uniswap/v2-core": "^1.0.1",
