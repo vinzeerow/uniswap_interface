@@ -1,5 +1,5 @@
-import { SwapPriceUpdateUserResponse } from '@uniswap/analytics-events'
 import { Percent } from '@phuphamdeltalabs/sdkcore'
+import { SwapPriceUpdateUserResponse } from '@uniswap/analytics-events'
 import { SwapResult } from 'hooks/useSwapCallback'
 import {
   formatPercentInBasisPointsNumber,

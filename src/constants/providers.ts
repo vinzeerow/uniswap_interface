@@ -2,8 +2,8 @@ import { deepCopy } from '@ethersproject/properties'
 // This is the only file which should instantiate new Providers.
 // eslint-disable-next-line @typescript-eslint/no-restricted-imports
 import { StaticJsonRpcProvider } from '@ethersproject/providers'
-import { isPlain } from '@reduxjs/toolkit'
 import { ChainId } from '@phuphamdeltalabs/sdkcore'
+import { isPlain } from '@reduxjs/toolkit'
 
 import { AVERAGE_L1_BLOCK_TIME } from './chainInfo'
 import { CHAIN_IDS_TO_NAMES, SupportedInterfaceChain } from './chains'

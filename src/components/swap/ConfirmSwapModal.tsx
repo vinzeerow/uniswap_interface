@@ -1,11 +1,11 @@
 import { Trans } from '@lingui/macro'
+import { Currency, Percent } from '@phuphamdeltalabs/sdkcore'
 import {
   InterfaceEventName,
   InterfaceModalName,
   SwapEventName,
   SwapPriceUpdateUserResponse,
 } from '@uniswap/analytics-events'
-import { Currency, Percent } from '@phuphamdeltalabs/sdkcore'
 import { useWeb3React } from '@web3-react/core'
 import { sendAnalyticsEvent, Trace, useTrace } from 'analytics'
 import Badge from 'components/Badge'

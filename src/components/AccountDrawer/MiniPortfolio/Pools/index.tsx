@@ -1,6 +1,6 @@
 import { t } from '@lingui/macro'
-import { BrowserEvent, InterfaceElementName, SharedEventName } from '@uniswap/analytics-events'
 import { Position } from '@phuphamdeltalabs/v3sdk'
+import { BrowserEvent, InterfaceElementName, SharedEventName } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
 import { TraceEvent } from 'analytics'
 import { useToggleAccountDrawer } from 'components/AccountDrawer'

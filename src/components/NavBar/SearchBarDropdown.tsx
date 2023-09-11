@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { InterfaceSectionName, NavBarSearchTypes } from '@uniswap/analytics-events'
 import { ChainId } from '@phuphamdeltalabs/sdkcore'
+import { InterfaceSectionName, NavBarSearchTypes } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
 import { useTrace } from 'analytics'
 import clsx from 'clsx'

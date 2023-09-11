@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { InterfacePageName, NFTEventName } from '@uniswap/analytics-events'
 import { ChainId } from '@phuphamdeltalabs/sdkcore'
+import { InterfacePageName, NFTEventName } from '@uniswap/analytics-events'
 import { sendAnalyticsEvent, useTrace } from 'analytics'
 import { MouseoverTooltip } from 'components/Tooltip'
 import { NftActivityType, NftMarketplace, OrderStatus } from 'graphql/data/__generated__/types-and-hooks'

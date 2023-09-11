@@ -1,6 +1,6 @@
-import { skipToken } from '@reduxjs/toolkit/query/react'
 import { Currency, CurrencyAmount, Percent, TradeType } from '@phuphamdeltalabs/sdkcore'
 import { IMetric, MetricLoggerUnit, setGlobalMetric } from '@phuphamdeltalabs/smart-order-router'
+import { skipToken } from '@reduxjs/toolkit/query/react'
 import { sendTiming } from 'components/analytics'
 import { AVERAGE_L1_BLOCK_TIME } from 'constants/chainInfo'
 import { ZERO_PERCENT } from 'constants/misc'
