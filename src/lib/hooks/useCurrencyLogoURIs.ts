@@ -45,6 +45,8 @@ export function getNativeLogoURI(chainId: ChainId = ChainId.MAINNET): string {
       return CeloLogo
     case ChainId.AVALANCHE:
       return AvaxLogo
+    case ChainId.OP_BNB:
+      return BnbLogo
     default:
       return EthereumLogo
   }
