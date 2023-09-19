@@ -254,18 +254,18 @@ export const DAI_AVALANCHE = new Token(
 
 export const USDT_OPBNB = new Token(
   ChainId.OP_BNB,
-  '0xefE0a89D9B66726385168e4a42F178E71B58fd85',
+  '0x766849b29d3d52b83476D7B7963C4Fd0E019A28B',
   18,
   'USDT',
   'USDT Token'
 ) 
 
-export const WETH_OPBNB = new Token(
+export const VNDC_OPBNB = new Token(
   ChainId.OP_BNB,
-  '0xF0B4a48860434a386489Eb07900A2Fd20B5F45EB',
-  18,
-  'WETH',
-  'WETH Token'
+  '0x44f36aEA073098CF1Dd3Ae50D1F25f3C607ABD6e',
+  0,
+  'VNDC',
+  'VNDC Token'
 )
 
 export const UNI: { [chainId: number]: Token } = {
