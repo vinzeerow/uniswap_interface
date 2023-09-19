@@ -174,6 +174,14 @@ export const MenuDropdown = () => {
                     <Trans>Vote in governance</Trans>
                   </PrimaryMenuRow.Text>
                 </PrimaryMenuRow>
+                <PrimaryMenuRow to="/demopage" close={toggleOpen}>
+                  <Icon>
+                    <GovernanceIcon width={24} height={24} color={theme.neutral1} />
+                  </Icon>
+                  <PrimaryMenuRow.Text>
+                    <Trans>Demo page</Trans>
+                  </PrimaryMenuRow.Text>
+                </PrimaryMenuRow>
                 <PrimaryMenuRow href="https://info.uniswap.org/#/">
                   <Icon>
                     <BarChartIcon width={24} height={24} color={theme.neutral1} />

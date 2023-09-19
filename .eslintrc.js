@@ -35,6 +35,7 @@ module.exports = {
         'prettier/prettier': ['off', { singleQuote: true }],
         "import/no-unresolved": 0,
         "no-console": ["warn", { "allow": ["info", "warn", "error", "debug", "log"] }],
+        'import/no-unused-modules': 'off',
         'import/no-restricted-paths': [
           'error',
           {
