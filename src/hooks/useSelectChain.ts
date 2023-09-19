@@ -19,7 +19,7 @@ export default function useSelectChain() {
   return useCallback(
     async (targetChain: ChainId) => {
       if (!connector) return
-
+      
       const connection = getConnection(connector)
 
       try {

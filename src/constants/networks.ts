@@ -118,7 +118,7 @@ export const FALLBACK_URLS = {
     'https://svc.blockdaemon.com/base/mainnet/native?apiKey=zpka_1334e7c450464d06b6e33a972a7a4e57_75320f43',
   ],
   [ChainId.OP_BNB]: [
-    'https://opbnb-testnet-rpc.bnbchain.org	',
+    'https://opbnb-testnet-rpc.bnbchain.org',
   ],
 }
 

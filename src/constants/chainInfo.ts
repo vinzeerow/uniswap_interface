@@ -259,6 +259,22 @@ const CHAIN_INFO: ChainInfoMap = {
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     color: darkTheme.chain_84531,
   },
+  [ChainId.OP_BNB]: {
+    networkType: NetworkType.L2,
+    blockWaitMsBeforeWarning: ms(`25m`),
+    bridge: 'https://opbnb-bridge.bnbchain.org/deposit',
+    defaultListUrl: BASE_LIST,
+    docs: 'https://docs.bnbchain.org/opbnb-docs/docs/build-on-opbnb/getting-started',
+    explorer: 'https://opbnb-testnet.bscscan.com/',
+    infoLink: 'https://opbnb.bnbchain.org/en',
+    label: 'opBNB',
+    logoUrl: bnbLogo,
+    statusPage: '',
+    circleLogoUrl: bnbLogo,
+    squareLogoUrl: bnbSquareLogoUrl,
+    nativeCurrency: { name: 'opBNB', symbol: 'BNB', decimals: 18 },
+    color: darkTheme.chain_5611,
+  },
 } as const
 
 export function getChainInfo(

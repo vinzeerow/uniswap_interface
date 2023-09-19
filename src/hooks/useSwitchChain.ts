@@ -27,6 +27,7 @@ export function useSwitchChain() {
 
   return useCallback(
     async (connector: Connector, chainId: ChainId) => {
+      
       if (!isSupportedChain(chainId)) {
         throw new Error(`Chain ${chainId} not supported for connector (${typeof connector})`)
       } else {
