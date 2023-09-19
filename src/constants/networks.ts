@@ -117,6 +117,9 @@ export const FALLBACK_URLS = {
     'https://base-mainnet.blastapi.io/b5a802d8-151d-4443-90a7-699108dc4e01',
     'https://svc.blockdaemon.com/base/mainnet/native?apiKey=zpka_1334e7c450464d06b6e33a972a7a4e57_75320f43',
   ],
+  [ChainId.OP_BNB]: [
+    'https://opbnb-testnet-rpc.bnbchain.org	',
+  ],
 }
 
 /**
@@ -150,4 +153,5 @@ export const RPC_URLS = {
   [ChainId.BNB]: [QUICKNODE_BNB_RPC_URL, ...FALLBACK_URLS[ChainId.BNB]],
   [ChainId.AVALANCHE]: [`https://avalanche-mainnet.infura.io/v3/${INFURA_KEY}`, ...FALLBACK_URLS[ChainId.AVALANCHE]],
   [ChainId.BASE]: [`https://base-mainnet.infura.io/v3/${INFURA_KEY}`, ...FALLBACK_URLS[ChainId.BASE]],
+  [ChainId.OP_BNB]: FALLBACK_URLS[ChainId.OP_BNB],
 }

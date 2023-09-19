@@ -182,7 +182,7 @@
     "@looksrare/sdk": "^0.10.2",
     "@metamask/jazzicon": "^2.0.0",
     "@opensea/seaport-js": "^1.2.0",
-    "@phuphamdeltalabs/sdkcore": "^5.0.0",
+    "@phuphamdeltalabs/sdkcore": "^5.0.1",
     "@phuphamdeltalabs/uniswapx-sdk": "^1.0.2",
     "@phuphamdeltalabs/v3sdk": "^1.0.1",
     "@phuphamdeltalabs/v2-sdk": "^1.0.4",
@@ -202,9 +202,9 @@
     "@uniswap/merkle-distributor": "^1.0.1",
     "@uniswap/permit2-sdk": "^1.2.0",
     "@uniswap/redux-multicall": "^1.1.8",
-    "@phuphamdeltalabs/smart-order-router": "^2.0.0",
+    "@phuphamdeltalabs/smart-order-router": "^2.0.1",
     "@uniswap/token-lists": "^1.0.0-beta.33",
-    "@phuphamdeltalabs/universal-router-sdk": "^1.0.1",
+    "@phuphamdeltalabs/universal-router-sdk": "^1.0.2",
     "@uniswap/v2-core": "^1.0.1",
     "@uniswap/v2-periphery": "^1.1.0-beta.0",
     "@uniswap/v3-core": "^1.0.1",
@@ -296,6 +296,6 @@
     "zustand": "^4.3.6"
   },
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   }
 }

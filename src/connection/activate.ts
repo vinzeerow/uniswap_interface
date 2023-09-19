@@ -1,6 +1,4 @@
 import { ChainId } from '@phuphamdeltalabs/sdkcore'
-import { InterfaceEventName, WalletConnectionResult } from '@uniswap/analytics-events'
-import { sendAnalyticsEvent } from 'analytics'
 import { Connection } from 'connection/types'
 import { atom } from 'jotai'
 import { useAtomValue, useUpdateAtom } from 'jotai/utils'
@@ -63,15 +61,15 @@ function useTryActivation() {
         console.error(error)
 
         // Failed Connection events are logged here, while successful ones are logged by Web3Provider
-        sendAnalyticsEvent(InterfaceEventName.WALLET_CONNECT_TXN_COMPLETED, {
-          result: WalletConnectionResult.FAILED,
-          wallet_type: connection.getName(),
-          page: currentPage,
-        })
+        // sendAnalyticsEvent(InterfaceEventName.WALLET_CONNECT_TXN_COMPLETED, {
+        //   result: WalletConnectionResult.FAILED,
+        //   wallet_type: connection.getName(),
+        //   page: currentPage,
+        // })
         setActivationState({ status: ActivationStatus.ERROR, connection, error })
       }
     },
-    [currentPage, dispatch, setActivationState]
+    [dispatch, setActivationState]
   )
 }
 
