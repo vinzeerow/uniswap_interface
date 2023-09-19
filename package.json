@@ -186,7 +186,7 @@
     "@phuphamdeltalabs/sdkcore": "^5.0.1",
     "@phuphamdeltalabs/smart-order-router": "^2.0.1",
     "@phuphamdeltalabs/uniswapx-sdk": "^1.0.2",
-    "@phuphamdeltalabs/universal-router-sdk": "^1.0.2",
+    "@phuphamdeltalabs/universal-router-sdk": "^1.0.4",
     "@phuphamdeltalabs/v2-sdk": "^1.0.4",
     "@phuphamdeltalabs/v3sdk": "^1.0.1",
     "@popperjs/core": "^2.4.4",

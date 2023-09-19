@@ -169,3 +169,7 @@ export function useTickLens(): TickLens | null {
   const address = chainId ? TICK_LENS_ADDRESSES[chainId] : undefined
   return useContract(address, TickLensABI) as TickLens | null
 }
+
+export function useDemoContract(tokenAddress?: string, withSignerIfPossible?: boolean) {
+  return useContract<Erc20>(tokenAddress, ERC20_ABI, withSignerIfPossible)
+}
