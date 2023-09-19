@@ -1,5 +1,6 @@
 import { Trans } from '@lingui/macro'
 import { ChainId, Currency, CurrencyAmount, Percent, Token } from '@phuphamdeltalabs/sdkcore'
+import { UNIVERSAL_ROUTER_ADDRESS } from '@phuphamdeltalabs/universal-router-sdk'
 import {
   BrowserEvent,
   InterfaceElementName,
@@ -400,7 +401,7 @@ export function Swap({
       (parsedAmounts[Field.INPUT]?.currency.isToken
         ? (parsedAmounts[Field.INPUT] as CurrencyAmount<Token>)
         : undefined),
-        undefined,
+        isSupportedChain(chainId) ? UNIVERSAL_ROUTER_ADDRESS(chainId) : undefined,
     trade?.fillType
   )
 

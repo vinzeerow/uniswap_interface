@@ -402,6 +402,11 @@ export function isBsc(chainId: number): chainId is ChainId.BNB {
   return chainId === ChainId.BNB
 }
 
+export function isopBNB(chainId: number): chainId is ChainId.OP_BNB {
+  return chainId === ChainId.OP_BNB
+}
+
+
 class BscNativeCurrency extends NativeCurrency {
   equals(other: Currency): boolean {
     return other.isNative && other.chainId === this.chainId
@@ -417,6 +422,24 @@ class BscNativeCurrency extends NativeCurrency {
   public constructor(chainId: number) {
     if (!isBsc(chainId)) throw new Error('Not bnb')
     super(chainId, 18, 'BNB', 'BNB')
+  }
+}
+
+class opBNBNativeCurrency extends NativeCurrency {
+  equals(other: Currency): boolean {
+    return other.isNative && other.chainId === this.chainId
+  }
+
+  get wrapped(): Token {
+    if (!isopBNB(this.chainId)) throw new Error('Not opbnb')
+    const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
+    invariant(wrapped instanceof Token)
+    return wrapped
+  }
+
+  public constructor(chainId: number) {
+    if (!isopBNB(chainId)) throw new Error('Not bnb')
+    super(chainId, 18, 'tBNB', 'BNB')
   }
 }
 
@@ -468,6 +491,8 @@ export function nativeOnChain(chainId: number): NativeCurrency | Token {
     nativeCurrency = new BscNativeCurrency(chainId)
   } else if (isAvalanche(chainId)) {
     nativeCurrency = new AvaxNativeCurrency(chainId)
+  } else if (isopBNB(chainId)) {
+    nativeCurrency = new opBNBNativeCurrency(chainId)
   } else {
     nativeCurrency = ExtendedEther.onChain(chainId)
   }
