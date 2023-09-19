@@ -33,6 +33,7 @@ import {
   USDT_ARBITRUM_ONE,
   USDT_AVALANCHE,
   USDT_BSC,
+  USDT_OPBNB,
   USDT_OPTIMISM,
   USDT_POLYGON,
   WBTC,
@@ -40,6 +41,7 @@ import {
   WBTC_OPTIMISM,
   WBTC_POLYGON,
   WETH_AVALANCHE,
+  WETH_OPBNB,
   WETH_POLYGON,
   WETH_POLYGON_MUMBAI,
   WRAPPED_NATIVE_CURRENCY,
@@ -114,6 +116,11 @@ export const COMMON_BASES: ChainCurrencyList = {
     USDC_AVALANCHE,
     USDT_AVALANCHE,
     WETH_AVALANCHE,
+  ],
+  [ChainId.OP_BNB]: [
+    nativeOnChain(ChainId.OP_BNB),
+    USDT_OPBNB,
+    WETH_OPBNB
   ],
 }
 

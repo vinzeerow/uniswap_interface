@@ -39,7 +39,7 @@ export function isSupportedChain(
   if (featureFlags && chainId && chainId in featureFlags) {
     return featureFlags[chainId]
   }
-  console.log("ábdandlas", chainId)
+  console.log("chainIdsupported", chainId)
   return !!chainId && SUPPORTED_CHAINS.indexOf(chainId) !== -1 && NOT_YET_UX_SUPPORTED_CHAIN_IDS.indexOf(chainId) === -1
 }
 

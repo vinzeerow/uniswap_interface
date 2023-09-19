@@ -1,4 +1,6 @@
+/* eslint-disable import/no-unused-modules */
 import { ChainId, Currency, Ether, NativeCurrency, Token, UNI_ADDRESSES, WETH9 } from '@phuphamdeltalabs/sdkcore'
+import { USDC_OP_BNB } from '@phuphamdeltalabs/smart-order-router'
 import invariant from 'tiny-invariant'
 
 export const NATIVE_CHAIN_ID = 'NATIVE'
@@ -250,6 +252,22 @@ export const DAI_AVALANCHE = new Token(
   'Dai.e Token'
 )
 
+export const USDT_OPBNB = new Token(
+  ChainId.OP_BNB,
+  '0xefE0a89D9B66726385168e4a42F178E71B58fd85',
+  18,
+  'USDT',
+  'USDT Token'
+) 
+
+export const WETH_OPBNB = new Token(
+  ChainId.OP_BNB,
+  '0xF0B4a48860434a386489Eb07900A2Fd20B5F45EB',
+  18,
+  'WETH',
+  'WETH Token'
+)
+
 export const UNI: { [chainId: number]: Token } = {
   [ChainId.MAINNET]: new Token(ChainId.MAINNET, UNI_ADDRESSES[ChainId.MAINNET], 18, 'UNI', 'Uniswap'),
   [ChainId.GOERLI]: new Token(ChainId.GOERLI, UNI_ADDRESSES[ChainId.GOERLI], 18, 'UNI', 'Uniswap'),
@@ -333,6 +351,13 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } =
     18,
     'WAVAX',
     'Wrapped AVAX'
+  ),
+  [ChainId.OP_BNB]: new Token(
+    ChainId.OP_BNB,
+    '0xF0B4a48860434a386489Eb07900A2Fd20B5F45EB',
+    18,
+    'WETH',
+    'WETH'
   ),
 }
 
@@ -471,5 +496,6 @@ export const TOKEN_SHORTHANDS: { [shorthand: string]: { [chainId in ChainId]?: s
     [ChainId.GOERLI]: USDC_GOERLI.address,
     [ChainId.SEPOLIA]: USDC_SEPOLIA.address,
     [ChainId.AVALANCHE]: USDC_AVALANCHE.address,
+    [ChainId.OP_BNB]: USDC_OP_BNB?.address,
   },
 }
