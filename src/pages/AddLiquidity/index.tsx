@@ -165,7 +165,7 @@ function AddLiquidity() {
     useV3MintActionHandlers(noLiquidity)
 
   const isValid = !errorMessage && !invalidRange
-
+  console.log("alksndasndas", !errorMessage && !invalidRange)
   // modal and loading
   const [showConfirm, setShowConfirm] = useState<boolean>(false)
   const [attemptingTxn, setAttemptingTxn] = useState<boolean>(false) // clicked confirm
@@ -208,7 +208,7 @@ function AddLiquidity() {
   )
 
   const argentWalletContract = useArgentWalletContract()
-
+    
   // check whether the user has approved the router on the tokens
   const [approvalA, approveACallback] = useApproveCallback(
     argentWalletContract ? undefined : parsedAmounts[Field.CURRENCY_A],
@@ -218,7 +218,7 @@ function AddLiquidity() {
     argentWalletContract ? undefined : parsedAmounts[Field.CURRENCY_B],
     chainId ? NONFUNGIBLE_POSITION_MANAGER_ADDRESSES[chainId] : undefined
   )
-
+    
   const allowedSlippage = useUserSlippageToleranceWithDefault(
     outOfRange ? ZERO_PERCENT : DEFAULT_ADD_IN_RANGE_SLIPPAGE_TOLERANCE
   )
@@ -417,13 +417,13 @@ function AddLiquidity() {
     !argentWalletContract && approvalA !== ApprovalState.APPROVED && !!parsedAmounts[Field.CURRENCY_A]
   const showApprovalB =
     !argentWalletContract && approvalB !== ApprovalState.APPROVED && !!parsedAmounts[Field.CURRENCY_B]
-
+  
   const pendingText = `Supplying ${!depositADisabled ? parsedAmounts[Field.CURRENCY_A]?.toSignificant(6) : ''} ${
     !depositADisabled ? currencies[Field.CURRENCY_A]?.symbol : ''
   } ${!outOfRange ? 'and' : ''} ${!depositBDisabled ? parsedAmounts[Field.CURRENCY_B]?.toSignificant(6) : ''} ${
     !depositBDisabled ? currencies[Field.CURRENCY_B]?.symbol : ''
   }`
-
+  
   const [searchParams, setSearchParams] = useSearchParams()
 
   const handleSetFullRange = useCallback(() => {
