@@ -126,7 +126,7 @@ export function useDerivedSwapInfo(state: SwapState, chainId: ChainId | undefine
     () => tryParseCurrencyAmount(typedValue, (isExactIn ? inputCurrency : outputCurrency) ?? undefined),
     [inputCurrency, isExactIn, outputCurrency, typedValue]
   )
-
+    
   const trade = useDebouncedTrade(
     isExactIn ? TradeType.EXACT_INPUT : TradeType.EXACT_OUTPUT,
     parsedAmount,
@@ -136,7 +136,7 @@ export function useDerivedSwapInfo(state: SwapState, chainId: ChainId | undefine
     inputTax,
     outputTax
   )
-
+    console.log("ạbdakjsdaksjbd", trade)
   const currencyBalances = useMemo(
     () => ({
       [Field.INPUT]: relevantTokenBalances[0],
@@ -152,7 +152,7 @@ export function useDerivedSwapInfo(state: SwapState, chainId: ChainId | undefine
     }),
     [inputCurrency, outputCurrency]
   )
-
+    
   // allowed slippage for classic trades is either auto slippage, or custom user defined slippage if auto slippage disabled
   const classicAutoSlippage = useAutoSlippageTolerance(isClassicTrade(trade.trade) ? trade.trade : undefined)
 

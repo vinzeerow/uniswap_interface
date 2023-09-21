@@ -43,15 +43,14 @@ const routers = new Map<ChainId, AlphaRouter>()
 export function getRouter(chainId: ChainId): AlphaRouter {
   const router = routers.get(chainId)
   if (router) return router
-
   const supportedChainId = asSupportedChain(chainId)
+ 
   if (supportedChainId) {
     const provider = RPC_PROVIDERS[supportedChainId]
     const router = new AlphaRouter({ chainId, provider })
     routers.set(chainId, router)
     return router
   }
-
   throw new Error(`Router does not support this chain (chainId: ${chainId}).`)
 }
 

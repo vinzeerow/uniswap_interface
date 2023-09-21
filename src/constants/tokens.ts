@@ -354,7 +354,7 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } =
   ),
   [ChainId.OP_BNB]: new Token(
     ChainId.OP_BNB,
-    '0xF0B4a48860434a386489Eb07900A2Fd20B5F45EB',
+    '0x4200000000000000000000000000000000000006',
     18,
     'WETH',
     'WETH'

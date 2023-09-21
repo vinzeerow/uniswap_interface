@@ -24,25 +24,26 @@ async function getQuote(
 ): Promise<QuoteResult> {
   const tokenInIsNative = Object.values(SwapRouterNativeAssets).includes(tokenIn.address as SwapRouterNativeAssets)
   const tokenOutIsNative = Object.values(SwapRouterNativeAssets).includes(tokenOut.address as SwapRouterNativeAssets)
-
+  
   const currencyIn = tokenInIsNative
     ? nativeOnChain(tokenIn.chainId)
     : new Token(tokenIn.chainId, tokenIn.address, tokenIn.decimals, tokenIn.symbol)
   const currencyOut = tokenOutIsNative
     ? nativeOnChain(tokenOut.chainId)
     : new Token(tokenOut.chainId, tokenOut.address, tokenOut.decimals, tokenOut.symbol)
-
+  
   const baseCurrency = tradeType === TradeType.EXACT_INPUT ? currencyIn : currencyOut
   const quoteCurrency = tradeType === TradeType.EXACT_INPUT ? currencyOut : currencyIn
 
   const amount = CurrencyAmount.fromRawAmount(baseCurrency, JSBI.BigInt(amountRaw))
   // TODO (WEB-2055): explore initializing client side routing on first load (when amountRaw is null) if there are enough users using client-side router preference.
+  
   const swapRoute = await router.route(amount, quoteCurrency, tradeType, /*swapConfig=*/ undefined, routerConfig)
 
   if (!swapRoute) {
     return { state: QuoteState.NOT_FOUND }
   }
-
+  
   return transformSwapRouteToGetQuoteResult(tradeType, amount, swapRoute)
 }
 
@@ -62,6 +63,7 @@ export async function getClientSideQuote(
   router: AlphaRouter,
   config: Partial<AlphaRouterConfig>
 ) {
+  
   return getQuote(
     {
       tradeType,

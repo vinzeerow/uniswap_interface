@@ -54,6 +54,7 @@ export function useUniversalRouterSwapCallback(
   const blockNumber = useBlockNumber()
 
   return useCallback(async () => {
+    
     return trace('swap.send', async ({ setTraceData, setTraceStatus, setTraceError }) => {
       try {
         if (!account) throw new Error('missing account')
@@ -75,7 +76,7 @@ export function useUniversalRouterSwapCallback(
           inputTokenPermit: options.permit,
           fee: options.feeOptions,
         })
-
+        
         const tx = {
           from: account,
           to: UNIVERSAL_ROUTER_ADDRESS(chainId),
@@ -83,8 +84,9 @@ export function useUniversalRouterSwapCallback(
           // TODO(https://github.com/Uniswap/universal-router-sdk/issues/113): universal-router-sdk returns a non-hexlified value.
           ...(value && !isZero(value) ? { value: toHex(value) } : {}),
         }
-
+        
         let gasEstimate: BigNumber
+        
         try {
           gasEstimate = await provider.estimateGas(tx)
         } catch (gasError) {
@@ -97,9 +99,11 @@ export function useUniversalRouterSwapCallback(
             tx,
             error: gasError,
           })
+          console.log("akjsndlaksndlas", gasError)
           console.warn(gasError)
           throw new GasEstimationError()
         }
+        
         const gasLimit = calculateGasMargin(gasEstimate)
         setTraceData('gasLimit', gasLimit.toNumber())
         const beforeSign = Date.now()
@@ -145,7 +149,7 @@ export function useUniversalRouterSwapCallback(
           // This error type allows us to distinguish between user rejections and other errors later too.
           throw new UserRejectedRequestError(swapErrorToUserReadableMessage(swapError))
         }
-
+        
         throw new Error(swapErrorToUserReadableMessage(swapError))
       }
     })

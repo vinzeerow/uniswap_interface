@@ -184,7 +184,7 @@
     "@opensea/seaport-js": "^1.2.0",
     "@phuphamdeltalabs/router-sdk": "^1.0.1",
     "@phuphamdeltalabs/sdkcore": "^5.0.2",
-    "@phuphamdeltalabs/smart-order-router": "^2.0.2",
+    "@phuphamdeltalabs/smart-order-router": "^2.0.9",
     "@phuphamdeltalabs/uniswapx-sdk": "^1.0.2",
     "@phuphamdeltalabs/universal-router-sdk": "^1.0.4",
     "@phuphamdeltalabs/v2-sdk": "^1.0.4",

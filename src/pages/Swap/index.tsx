@@ -286,7 +286,7 @@ export function Swap({
     () => [!inputTax.equalTo(0), !outputTax.equalTo(0)],
     [inputTax, outputTax]
   )
-
+    
   useEffect(() => {
     // Force exact input if the user switches to an output token with tax
     if (outputTokenHasTax && independentField === Field.OUTPUT) dispatch(forceExactInput())
@@ -390,6 +390,8 @@ export function Swap({
     }),
     [dependentField, independentField, parsedAmounts, showWrap, typedValue]
   )
+
+  console.log("akjsndalsndals", dependentField)
 
   const userHasSpecifiedInputOutput = Boolean(
     currencies[Field.INPUT] && currencies[Field.OUTPUT] && parsedAmounts[independentField]?.greaterThan(JSBI.BigInt(0))
@@ -559,7 +561,7 @@ export function Swap({
   const showDetailsDropdown = Boolean(
     !showWrap && userHasSpecifiedInputOutput && (trade || routeIsLoading || routeIsSyncing)
   )
-
+  console.log("kajsndlaksádasdasdnalks", formattedAmounts[Field.OUTPUT])
   const inputCurrency = currencies[Field.INPUT] ?? undefined
   const switchChain = useSwitchChain()
   const switchingChain = useAppSelector((state) => state.wallets.switchingChain)

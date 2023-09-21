@@ -124,6 +124,7 @@ export const routingApi = createApi({
         let fellBack = false
         logSwapQuoteRequest(args.tokenInChainId, args.routerPreference)
         const quoteStartMark = performance.mark(`quote-fetch-start-${Date.now()}`)
+        console.log("kajsndalksndalksdnals")
         if (shouldUseAPIRouter(args)) {
           fellBack = true
           try {
@@ -183,7 +184,9 @@ export const routingApi = createApi({
         try {
           const method = fellBack ? QuoteMethod.CLIENT_SIDE_FALLBACK : QuoteMethod.CLIENT_SIDE
           const router = getRouter(args.tokenInChainId)
+          
           const quoteResult = await getClientSideQuote(args, router, CLIENT_PARAMS)
+          
           if (quoteResult.state === QuoteState.SUCCESS) {
             const trade = await transformRoutesToTrade(args, quoteResult.data, method)
             return {

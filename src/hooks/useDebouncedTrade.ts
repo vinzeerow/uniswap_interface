@@ -70,7 +70,7 @@ export function useDebouncedTrade(
   const { chainId } = useWeb3React()
   const autoRouterSupported = useAutoRouterSupported()
   const isWindowVisible = useIsWindowVisible()
-
+  
   const inputs = useMemo<[CurrencyAmount<Currency> | undefined, Currency | undefined]>(
     () => [amountSpecified, otherCurrency],
     [amountSpecified, otherCurrency]

@@ -118,7 +118,7 @@ function useConfirmModalState({
   const maximumAmountIn = useMaxAmountIn(trade, allowedSlippage)
 
   const nativeCurrency = useNativeCurrency(chainId)
-
+  
   const [wrapTxHash, setWrapTxHash] = useState<string>()
   const { execute: onWrap } = useWrapCallback(
     nativeCurrency,
@@ -298,7 +298,7 @@ export default function ConfirmSwapModal({
     })
 
   const swapStatus = useSwapTransactionStatus(swapResult)
-
+    
   // Swap was reverted onchain.
   const swapReverted = swapStatus === TransactionStatus.Failed
   // Swap failed locally and was not broadcast to the blockchain.

@@ -38,7 +38,7 @@ export function useRoutingAPIArguments({
   const uniswapXEthOutputEnabled = useUniswapXEthOutputEnabled()
   const uniswapXExactOutputEnabled = useUniswapXExactOutputEnabled()
   const fotAdjustmentsEnabled = useFotAdjustmentsEnabled()
-
+  
   return useMemo(
     () =>
       !tokenIn || !tokenOut || !amount || tokenIn.equals(tokenOut) || tokenIn.wrapped.equals(tokenOut.wrapped)
