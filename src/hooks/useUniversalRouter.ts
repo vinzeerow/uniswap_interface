@@ -52,7 +52,6 @@ export function useUniversalRouterSwapCallback(
   const { account, chainId, provider } = useWeb3React()
   const analyticsContext = useTrace()
   const blockNumber = useBlockNumber()
-
   return useCallback(async () => {
     
     return trace('swap.send', async ({ setTraceData, setTraceStatus, setTraceError }) => {
@@ -69,14 +68,14 @@ export function useUniversalRouterSwapCallback(
         // universal-router-sdk reconstructs V2Trade objects, so rather than updating the trade amounts to account for tax, we adjust the slippage tolerance as a workaround
         // TODO(WEB-2725): update universal-router-sdk to not reconstruct trades
         const taxAdjustedSlippageTolerance = options.slippageTolerance.add(trade.totalTaxRate)
-
+        
         const { calldata: data, value } = SwapRouter.swapERC20CallParameters(trade, {
           slippageTolerance: taxAdjustedSlippageTolerance,
           deadlineOrPreviousBlockhash: options.deadline?.toString(),
           inputTokenPermit: options.permit,
           fee: options.feeOptions,
         })
-        
+       
         const tx = {
           from: account,
           to: UNIVERSAL_ROUTER_ADDRESS(chainId),
@@ -84,9 +83,8 @@ export function useUniversalRouterSwapCallback(
           // TODO(https://github.com/Uniswap/universal-router-sdk/issues/113): universal-router-sdk returns a non-hexlified value.
           ...(value && !isZero(value) ? { value: toHex(value) } : {}),
         }
-        
+        console.log("alsndalksnda", tx)
         let gasEstimate: BigNumber
-        
         try {
           gasEstimate = await provider.estimateGas(tx)
         } catch (gasError) {
@@ -99,7 +97,7 @@ export function useUniversalRouterSwapCallback(
             tx,
             error: gasError,
           })
-          console.log("akjsndlaksndlas", gasError)
+          console.log("estgasfee", gasError)
           console.warn(gasError)
           throw new GasEstimationError()
         }
@@ -107,6 +105,7 @@ export function useUniversalRouterSwapCallback(
         const gasLimit = calculateGasMargin(gasEstimate)
         setTraceData('gasLimit', gasLimit.toNumber())
         const beforeSign = Date.now()
+        console.log("kajbsdkjasndlkas", tx, gasLimit)
         const response = await provider
           .getSigner()
           .sendTransaction({ ...tx, gasLimit })
