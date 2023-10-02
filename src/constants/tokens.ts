@@ -268,6 +268,13 @@ export const VNDC_OPBNB = new Token(
   'VNDC Token'
 )
 
+export const CAKE_OPBNB = new Token(
+  ChainId.OP_BNB,
+  '0xA15e3C00b2f8eC38b535907c99d291926Dc1ad8D',
+  18,
+  'CAKE',
+  'CAKE Token'
+)
 export const UNI: { [chainId: number]: Token } = {
   [ChainId.MAINNET]: new Token(ChainId.MAINNET, UNI_ADDRESSES[ChainId.MAINNET], 18, 'UNI', 'Uniswap'),
   [ChainId.GOERLI]: new Token(ChainId.GOERLI, UNI_ADDRESSES[ChainId.GOERLI], 18, 'UNI', 'Uniswap'),

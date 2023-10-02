@@ -5,6 +5,7 @@ import {
   ARB,
   BTC_BSC,
   BUSD_BSC,
+  CAKE_OPBNB,
   CEUR_CELO,
   CEUR_CELO_ALFAJORES,
   CMC02_CELO,
@@ -120,7 +121,7 @@ export const COMMON_BASES: ChainCurrencyList = {
   [ChainId.OP_BNB]: [
     nativeOnChain(ChainId.OP_BNB),
     USDT_OPBNB,
-    VNDC_OPBNB
+    VNDC_OPBNB, CAKE_OPBNB
   ],
 }
 

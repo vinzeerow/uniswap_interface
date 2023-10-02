@@ -51,13 +51,13 @@ export function useSwapCallback(
   )
 
   const swapCallback = isUniswapXTrade(trade) ? uniswapXSwapCallback : universalRouterSwapCallback
-    
+  
   return useCallback(async () => {
     if (!trade) throw new Error('missing trade')
     if (!account || !chainId) throw new Error('wallet must be connected to swap')
 
     const result = await swapCallback()
-
+    
     const swapInfo: ExactInputSwapTransactionInfo | ExactOutputSwapTransactionInfo = {
       type: TransactionType.SWAP,
       inputCurrencyId: currencyId(trade.inputAmount.currency),

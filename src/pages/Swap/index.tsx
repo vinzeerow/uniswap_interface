@@ -391,7 +391,6 @@ export function Swap({
     [dependentField, independentField, parsedAmounts, showWrap, typedValue]
   )
 
-  console.log("akjsndalsndals", dependentField)
 
   const userHasSpecifiedInputOutput = Boolean(
     currencies[Field.INPUT] && currencies[Field.OUTPUT] && parsedAmounts[independentField]?.greaterThan(JSBI.BigInt(0))
@@ -445,6 +444,7 @@ export function Swap({
       swapError: undefined,
       swapResult: undefined,
     }))
+    console.log("gvhvhjvk")
     swapCallback()
       .then((result) => {
         setSwapState((currentState) => ({
@@ -454,6 +454,7 @@ export function Swap({
         }))
       })
       .catch((error) => {
+        console.log("akjsbdajsbkjas", error)
         setSwapState((currentState) => ({
           ...currentState,
           swapError: error,
@@ -561,7 +562,6 @@ export function Swap({
   const showDetailsDropdown = Boolean(
     !showWrap && userHasSpecifiedInputOutput && (trade || routeIsLoading || routeIsSyncing)
   )
-  console.log("kajsndlaksádasdasdnalks", formattedAmounts[Field.OUTPUT])
   const inputCurrency = currencies[Field.INPUT] ?? undefined
   const switchChain = useSwitchChain()
   const switchingChain = useAppSelector((state) => state.wallets.switchingChain)
