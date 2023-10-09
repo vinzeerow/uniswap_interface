@@ -444,7 +444,7 @@ export function Swap({
       swapError: undefined,
       swapResult: undefined,
     }))
-    console.log("gvhvhjvk")
+    
     swapCallback()
       .then((result) => {
         setSwapState((currentState) => ({
@@ -454,7 +454,6 @@ export function Swap({
         }))
       })
       .catch((error) => {
-        console.log("akjsbdajsbkjas", error)
         setSwapState((currentState) => ({
           ...currentState,
           swapError: error,

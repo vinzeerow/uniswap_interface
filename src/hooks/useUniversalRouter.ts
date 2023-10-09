@@ -83,7 +83,6 @@ export function useUniversalRouterSwapCallback(
           // TODO(https://github.com/Uniswap/universal-router-sdk/issues/113): universal-router-sdk returns a non-hexlified value.
           ...(value && !isZero(value) ? { value: toHex(value) } : {}),
         }
-        console.log("alsndalksnda", tx)
         let gasEstimate: BigNumber
         try {
           gasEstimate = await provider.estimateGas(tx)
@@ -105,7 +104,6 @@ export function useUniversalRouterSwapCallback(
         const gasLimit = calculateGasMargin(gasEstimate)
         setTraceData('gasLimit', gasLimit.toNumber())
         const beforeSign = Date.now()
-        console.log("kajbsdkjasndlkas", tx, gasLimit)
         const response = await provider
           .getSigner()
           .sendTransaction({ ...tx, gasLimit })
