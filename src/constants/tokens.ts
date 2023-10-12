@@ -275,6 +275,23 @@ export const CAKE_OPBNB = new Token(
   'CAKE',
   'CAKE Token'
 )
+
+export const SUSHI_ONUSTESTNET = new Token(
+  ChainId.ONUS_TEST,
+  '0x9E8Dc774c146A85D02dC0837d62c6154391979ad',
+  18,
+  'SUSHI',
+  'SUSHI Token' 
+)
+
+export const BUSD_ONUSTESTNET = new Token(
+  ChainId.ONUS_TEST,
+  '0xeBaC619E4c0fD83124dA549c834eC52A6e1521AA',
+  18,
+  'BUSD',
+  'BUSD Token' 
+)
+
 export const UNI: { [chainId: number]: Token } = {
   [ChainId.MAINNET]: new Token(ChainId.MAINNET, UNI_ADDRESSES[ChainId.MAINNET], 18, 'UNI', 'Uniswap'),
   [ChainId.GOERLI]: new Token(ChainId.GOERLI, UNI_ADDRESSES[ChainId.GOERLI], 18, 'UNI', 'Uniswap'),
@@ -366,6 +383,13 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } =
     'WETH',
     'WETH'
   ),
+  [ChainId.ONUS_TEST]: new Token(
+    ChainId.ONUS_TEST,
+    '0x5653a147156B1A1e0E09661e4841B2fFFb1cd438',
+    18,
+    'WONUS',
+    'WONUS'
+  ),
 }
 
 export function isCelo(chainId: number): chainId is ChainId.CELO | ChainId.CELO_ALFAJORES {
@@ -413,6 +437,11 @@ export function isopBNB(chainId: number): chainId is ChainId.OP_BNB {
   return chainId === ChainId.OP_BNB
 }
 
+export function isOnustestnet(chainId: number): chainId is ChainId.ONUS_TEST {
+  return chainId === ChainId.ONUS_TEST
+}
+
+
 
 class BscNativeCurrency extends NativeCurrency {
   equals(other: Currency): boolean {
@@ -447,6 +476,24 @@ class opBNBNativeCurrency extends NativeCurrency {
   public constructor(chainId: number) {
     if (!isopBNB(chainId)) throw new Error('Not bnb')
     super(chainId, 18, 'tBNB', 'BNB')
+  }
+}
+
+class onusTestnetNativeCurrency extends NativeCurrency {
+  equals(other: Currency): boolean {
+    return other.isNative && other.chainId === this.chainId
+  }
+
+  get wrapped(): Token {
+    if (!isOnustestnet(this.chainId)) throw new Error('Not opbnb')
+    const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
+    invariant(wrapped instanceof Token)
+    return wrapped
+  }
+
+  public constructor(chainId: number) {
+    if (!isOnustestnet(chainId)) throw new Error('Not onus testnet')
+    super(chainId, 18, 'ONUS', 'ONUS')
   }
 }
 
@@ -500,9 +547,11 @@ export function nativeOnChain(chainId: number): NativeCurrency | Token {
     nativeCurrency = new AvaxNativeCurrency(chainId)
   } else if (isopBNB(chainId)) {
     nativeCurrency = new opBNBNativeCurrency(chainId)
+  }  else if (isOnustestnet(chainId)) {
+    nativeCurrency = new onusTestnetNativeCurrency(chainId)
   } else {
     nativeCurrency = ExtendedEther.onChain(chainId)
-  }
+  } 
   return (cachedNativeCurrency[chainId] = nativeCurrency)
 }
 

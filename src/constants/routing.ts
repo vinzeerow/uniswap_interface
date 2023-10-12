@@ -5,6 +5,7 @@ import {
   ARB,
   BTC_BSC,
   BUSD_BSC,
+  BUSD_ONUSTESTNET,
   CAKE_OPBNB,
   CEUR_CELO,
   CEUR_CELO_ALFAJORES,
@@ -22,6 +23,7 @@ import {
   OP,
   PORTAL_ETH_CELO,
   PORTAL_USDC_CELO,
+  SUSHI_ONUSTESTNET,
   USDC_ARBITRUM,
   USDC_ARBITRUM_GOERLI,
   USDC_AVALANCHE,
@@ -122,6 +124,11 @@ export const COMMON_BASES: ChainCurrencyList = {
     nativeOnChain(ChainId.OP_BNB),
     USDT_OPBNB,
     VNDC_OPBNB, CAKE_OPBNB
+  ],
+  [ChainId.ONUS_TEST]: [
+    nativeOnChain(ChainId.ONUS_TEST),
+    SUSHI_ONUSTESTNET,
+    BUSD_ONUSTESTNET
   ],
 }
 

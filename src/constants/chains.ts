@@ -24,6 +24,7 @@ export const CHAIN_IDS_TO_NAMES = {
   [ChainId.AVALANCHE]: 'avalanche',
   [ChainId.BASE]: 'base',
   [ChainId.OP_BNB]: 'op_bnb',
+  [ChainId.ONUS_TEST]: 'onus_testnet',
 } as const
 
 // Include ChainIds in this array if they are not supported by the UX yet, but are already in the SDK.
@@ -39,7 +40,7 @@ export function isSupportedChain(
   if (featureFlags && chainId && chainId in featureFlags) {
     return featureFlags[chainId]
   }
-  console.log("chainIdsupported", chainId)
+  console.log(chainId)
   return !!chainId && SUPPORTED_CHAINS.indexOf(chainId) !== -1 && NOT_YET_UX_SUPPORTED_CHAIN_IDS.indexOf(chainId) === -1
 }
 
@@ -77,7 +78,8 @@ export const TESTNET_CHAIN_IDS = [
   ChainId.ARBITRUM_GOERLI,
   ChainId.OPTIMISM_GOERLI,
   ChainId.CELO_ALFAJORES,
-  ChainId.OP_BNB
+  ChainId.OP_BNB,
+  ChainId.ONUS_TEST
 ] as const
 
 /**
@@ -93,6 +95,7 @@ export const L1_CHAIN_IDS = [
   ChainId.CELO_ALFAJORES,
   ChainId.BNB,
   ChainId.AVALANCHE,
+  ChainId.ONUS_TEST,
 ] as const
 
 export type SupportedL1ChainId = (typeof L1_CHAIN_IDS)[number]

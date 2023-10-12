@@ -8,9 +8,10 @@ import AvaxLogo from '../../assets/svg/avax_logo.svg'
 import BnbLogo from '../../assets/svg/bnb-logo.svg'
 import CeloLogo from '../../assets/svg/celo_logo.svg'
 import MaticLogo from '../../assets/svg/matic-token-icon.svg'
-import { isCelo, NATIVE_CHAIN_ID, nativeOnChain } from '../../constants/tokens'
+import OnusLogo from '../../assets/svg/onus.svg'
+import { isCelo, NATIVE_CHAIN_ID, nativeOnChain } from '../../constants/tokens' 
 
-type Network = 'ethereum' | 'arbitrum' | 'optimism' | 'polygon' | 'smartchain' | 'celo' | 'avalanchec'
+type Network = 'ethereum' | 'arbitrum' | 'optimism' | 'polygon' | 'smartchain' | 'celo' | 'avalanchec' | 'onustestnet'
 
 export function chainIdToNetworkName(networkId: ChainId): Network {
   switch (networkId) {
@@ -28,6 +29,8 @@ export function chainIdToNetworkName(networkId: ChainId): Network {
       return 'celo'
     case ChainId.AVALANCHE:
       return 'avalanchec'
+    case ChainId.ONUS_TEST:
+        return 'onustestnet'
     default:
       return 'ethereum'
   }
@@ -47,8 +50,10 @@ export function getNativeLogoURI(chainId: ChainId = ChainId.MAINNET): string {
       return AvaxLogo
     case ChainId.OP_BNB:
       return BnbLogo
+    case ChainId.ONUS_TEST:
+          return OnusLogo
     default:
-      return EthereumLogo
+      return EthereumLogo  
   }
 }
 

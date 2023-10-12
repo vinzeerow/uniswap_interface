@@ -73,4 +73,5 @@ export const RPC_PROVIDERS: { [key in SupportedInterfaceChain]: StaticJsonRpcPro
   [ChainId.AVALANCHE]: new AppJsonRpcProvider(ChainId.AVALANCHE),
   [ChainId.BASE]: new AppJsonRpcProvider(ChainId.BASE),
   [ChainId.OP_BNB]: new AppJsonRpcProvider(ChainId.OP_BNB),
+  [ChainId.ONUS_TEST]: new AppJsonRpcProvider(ChainId.ONUS_TEST),
 }

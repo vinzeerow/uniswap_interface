@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { PERMIT2_ADDRESS } from '@uniswap/permit2-sdk'
 import { ChainId } from '@phuphamdeltalabs/sdkcore'
+import { PERMIT2_ADDRESS } from '@uniswap/permit2-sdk'
 import { useWeb3React } from '@web3-react/core'
 import { USDC_MAINNET } from 'constants/tokens'
 import store from 'state'

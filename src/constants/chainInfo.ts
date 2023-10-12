@@ -11,12 +11,13 @@ import bnbSquareLogoUrl from 'assets/svg/bnb_square_logo.svg'
 import bnbLogo from 'assets/svg/bnb-logo.svg'
 import celoLogo from 'assets/svg/celo_logo.svg'
 import celoSquareLogoUrl from 'assets/svg/celo_square_logo.svg'
+import onusLogo from 'assets/svg/onus.svg'
 import optimismSquareLogoUrl from 'assets/svg/optimism_square_logo.svg'
 import optimismLogoUrl from 'assets/svg/optimistic_ethereum.svg'
 import polygonSquareLogoUrl from 'assets/svg/polygon_square_logo.svg'
 import polygonMaticLogo from 'assets/svg/polygon-matic-logo.svg'
 import ms from 'ms'
-import { darkTheme } from 'theme/colors'
+import { colors, darkTheme } from 'theme/colors'
 
 import { SupportedL1ChainId, SupportedL2ChainId } from './chains'
 import { ARBITRUM_LIST, AVALANCHE_LIST, BASE_LIST, CELO_LIST, OPTIMISM_LIST, PLASMA_BNB_LIST } from './lists'
@@ -274,6 +275,22 @@ const CHAIN_INFO: ChainInfoMap = {
     squareLogoUrl: bnbSquareLogoUrl,
     nativeCurrency: { name: 'opBNB', symbol: 'BNB', decimals: 18 },
     color: darkTheme.chain_5611,
+  },
+  [ChainId.ONUS_TEST]: {
+    networkType: NetworkType.L1,
+    blockWaitMsBeforeWarning: ms(`25m`),
+    bridge: '',
+    docs: 'https://docs.onuschain.io/',
+    explorer: 'https://explorer-testnet.onuschain.io/',
+    infoLink: 'https://docs.onuschain.io/',
+    label: 'Onus Testnet',
+    logoUrl: onusLogo,
+    circleLogoUrl: onusLogo,
+    squareLogoUrl: onusLogo,
+    nativeCurrency: { name: 'ONUS', symbol: 'ONUS', decimals: 18 },
+    defaultListUrl: "",
+    color: colors.blueFF,
+    backgroundColor: colors.blueFF,
   },
 } as const
 

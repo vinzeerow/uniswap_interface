@@ -120,6 +120,9 @@ export const FALLBACK_URLS = {
   [ChainId.OP_BNB]: [
     'https://opbnb-testnet-rpc.bnbchain.org',
   ],
+  [ChainId.ONUS_TEST]: [
+    'https://rpc-testnet.onuschain.io',
+  ],
 }
 
 /**
@@ -154,4 +157,5 @@ export const RPC_URLS = {
   [ChainId.AVALANCHE]: [`https://avalanche-mainnet.infura.io/v3/${INFURA_KEY}`, ...FALLBACK_URLS[ChainId.AVALANCHE]],
   [ChainId.BASE]: [`https://base-mainnet.infura.io/v3/${INFURA_KEY}`, ...FALLBACK_URLS[ChainId.BASE]],
   [ChainId.OP_BNB]: FALLBACK_URLS[ChainId.OP_BNB],
+  [ChainId.ONUS_TEST]: FALLBACK_URLS[ChainId.ONUS_TEST],
 }
