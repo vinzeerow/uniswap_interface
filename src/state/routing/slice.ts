@@ -171,7 +171,7 @@ export const routingApi = createApi({
             }
 
             const uraQuoteResponse = response.data as URAQuoteResponse
-            const tradeResult = await transformRoutesToTrade(args, uraQuoteResponse, QuoteMethod.ROUTING_API)
+            const tradeResult = await transformRoutesToTrade(args, uraQuoteResponse, QuoteMethod.ROUTING_API, args.tokenInChainId)
             return { data: { ...tradeResult, latencyMs: getQuoteLatencyMeasure(quoteStartMark).duration } }
           } catch (error: any) {
             console.warn(
@@ -188,7 +188,7 @@ export const routingApi = createApi({
           const quoteResult = await getClientSideQuote(args, router, CLIENT_PARAMS)
           
           if (quoteResult.state === QuoteState.SUCCESS) {
-            const trade = await transformRoutesToTrade(args, quoteResult.data, method)
+            const trade = await transformRoutesToTrade(args, quoteResult.data, method, args.tokenInChainId)
             return {
               data: { ...trade, latencyMs: getQuoteLatencyMeasure(quoteStartMark).duration },
             }

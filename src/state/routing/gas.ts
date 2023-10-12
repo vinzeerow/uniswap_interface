@@ -1,5 +1,5 @@
 import { Currency } from '@phuphamdeltalabs/sdkcore'
-import { MaxUint256, PERMIT2_ADDRESS } from '@uniswap/permit2-sdk'
+import { MaxUint256 } from '@uniswap/permit2-sdk'
 import ERC20_ABI from 'abis/erc20.json'
 import { Erc20, Weth } from 'abis/types'
 import WETH_ABI from 'abis/weth.json'
@@ -7,6 +7,7 @@ import { SupportedInterfaceChain } from 'constants/chains'
 import { RPC_PROVIDERS } from 'constants/providers'
 import { WRAPPED_NATIVE_CURRENCY } from 'constants/tokens'
 import { getContract } from 'utils'
+import { getPERMIT2ADDRESS } from 'utils/getPERMIT2ADDRESS'
 
 import { ApproveInfo, WrapInfo } from './types'
 
@@ -18,7 +19,8 @@ export async function getApproveInfo(
   account: string | undefined,
   currency: Currency,
   amount: string,
-  usdCostPerGas?: number
+  usdCostPerGas?: number,
+  chainId?: number,
 ): Promise<ApproveInfo> {
   // native currencies do not need token approvals
   if (currency.isNative) return { needsApprove: false }
@@ -31,7 +33,7 @@ export async function getApproveInfo(
 
   let approveGasUseEstimate
   try {
-    const allowance = await tokenContract.callStatic.allowance(account, PERMIT2_ADDRESS)
+    const allowance = await tokenContract.callStatic.allowance(account, getPERMIT2ADDRESS(chainId))
     if (!allowance.lt(amount)) return { needsApprove: false }
   } catch (_) {
     // If contract lookup fails (eg if Infura goes down), then don't show gas info for approving the token
@@ -39,7 +41,7 @@ export async function getApproveInfo(
   }
 
   try {
-    const approveTx = await tokenContract.populateTransaction.approve(PERMIT2_ADDRESS, MaxUint256)
+    const approveTx = await tokenContract.populateTransaction.approve(getPERMIT2ADDRESS(chainId), MaxUint256)
     approveGasUseEstimate = (await provider.estimateGas({ from: account, ...approveTx })).toNumber()
   } catch (_) {
     // estimateGas will error if the account doesn't have sufficient token balance, but we should show an estimated cost anyway

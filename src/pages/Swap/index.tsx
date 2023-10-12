@@ -431,7 +431,7 @@ export function Swap({
       swapResult: undefined,
     })
   }, [trade])
-
+  console.log("ạdnlaksdalksd", trade)
   const handleSwap = useCallback(() => {
     if (!swapCallback) {
       return

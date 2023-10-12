@@ -189,7 +189,8 @@ function getClassicTradeDetails(
 export async function transformRoutesToTrade(
   args: GetQuoteArgs,
   data: URAQuoteResponse,
-  quoteMethod: QuoteMethod
+  quoteMethod: QuoteMethod,
+  chainId: number
 ): Promise<TradeResult> {
   const { tradeType, needsWrapIfUniswapX, routerPreference, account, amount } = args
 
@@ -210,7 +211,7 @@ export async function transformRoutesToTrade(
   // Some sus javascript float math but it's ok because its just an estimate for display purposes
   const usdCostPerGas = gasUseEstimateUSD && gasUseEstimate ? gasUseEstimateUSD / gasUseEstimate : undefined
 
-  const approveInfo = await getApproveInfo(account, currencyIn, amount, usdCostPerGas)
+  const approveInfo = await getApproveInfo(account, currencyIn, amount, usdCostPerGas, chainId)
 
   const classicTrade = new ClassicTrade({
     v2Routes:
