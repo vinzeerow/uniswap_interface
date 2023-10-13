@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Percent, TradeType } from '@phuphamdeltalabs/sdkcore'
+import { Currency, CurrencyAmount, Percent, TradeType } from '@tpvinh/sdk-core'
 import { SkipToken, skipToken } from '@reduxjs/toolkit/query/react'
 import { useFotAdjustmentsEnabled } from 'featureFlags/flags/fotAdjustments'
 import { useUniswapXEthOutputEnabled } from 'featureFlags/flags/uniswapXEthOutput'

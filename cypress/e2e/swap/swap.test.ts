@@ -1,5 +1,5 @@
 import { SwapEventName } from '@uniswap/analytics-events'
-import { ChainId } from '@phuphamdeltalabs/sdkcore'
+import { ChainId } from '@tpvinh/sdk-core'
 
 import { UNI, USDC_MAINNET } from '../../../src/constants/tokens'
 import { getBalance, getTestSelector } from '../../utils'

@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { Percent } from '@phuphamdeltalabs/sdkcore'
+import { Percent } from '@tpvinh/sdk-core'
 import { ButtonEmphasis, ButtonSize, ThemeButton } from 'components/Button'
 import { ColumnCenter } from 'components/Column'
 import Row from 'components/Row'

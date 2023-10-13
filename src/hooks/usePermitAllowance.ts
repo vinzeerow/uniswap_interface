@@ -1,4 +1,4 @@
-import { CurrencyAmount, Token } from '@phuphamdeltalabs/sdkcore'
+import { CurrencyAmount, Token } from '@tpvinh/sdk-core'
 import { AllowanceTransfer, MaxAllowanceTransferAmount, PermitSingle } from '@uniswap/permit2-sdk'
 import { useWeb3React } from '@web3-react/core'
 import PERMIT2_ABI from 'abis/permit2.json'

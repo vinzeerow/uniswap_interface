@@ -1,5 +1,5 @@
 // a list of tokens by chain
-import { ChainId, Currency, Token } from '@phuphamdeltalabs/sdkcore'
+import { ChainId, Currency, Token } from '@tpvinh/sdk-core'
 
 import {
   ARB,

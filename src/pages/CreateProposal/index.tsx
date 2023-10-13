@@ -1,7 +1,7 @@
 import { defaultAbiCoder } from '@ethersproject/abi'
 import { getAddress, isAddress } from '@ethersproject/address'
 import { Trans } from '@lingui/macro'
-import { Currency, CurrencyAmount, Token } from '@phuphamdeltalabs/sdkcore'
+import { Currency, CurrencyAmount, Token } from '@tpvinh/sdk-core'
 import { InterfacePageName } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
 import { Trace } from 'analytics'

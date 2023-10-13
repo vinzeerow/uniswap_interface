@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { Currency } from '@phuphamdeltalabs/sdkcore'
-import { Position } from '@phuphamdeltalabs/v3sdk'
+import { Currency } from '@tpvinh/sdk-core'
+import { Position } from '@tpvinh/v3-sdk'
 import RangeBadge from 'components/Badge/RangeBadge'
 import { LightCard } from 'components/Card'
 import { AutoColumn } from 'components/Column'

@@ -1,5 +1,5 @@
-import { ChainId, Percent } from '@phuphamdeltalabs/sdkcore'
-import { WETH_ADDRESS as getWethAddress } from '@phuphamdeltalabs/universal-router-sdk'
+import { ChainId, Percent } from '@tpvinh/sdk-core'
+import { WETH_ADDRESS as getWethAddress } from '@tpvinh/universal-router-sdk'
 import * as Sentry from '@sentry/react'
 import { InterfaceEventName } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'

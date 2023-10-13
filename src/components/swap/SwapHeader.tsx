@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { Percent } from '@phuphamdeltalabs/sdkcore'
+import { Percent } from '@tpvinh/sdk-core'
 import { InterfaceTrade } from 'state/routing/types'
 import styled from 'styled-components'
 import { ThemedText } from 'theme'

@@ -1,5 +1,5 @@
-import { ChainId } from '@phuphamdeltalabs/sdkcore'
-import { DAI_ARBITRUM } from '@phuphamdeltalabs/smart-order-router'
+import { ChainId } from '@tpvinh/sdk-core'
+import { DAI_ARBITRUM } from '@tpvinh/smart-order-router'
 import { BRIDGED_USDC_ARBITRUM, DAI, USDC_MAINNET } from 'constants/tokens'
 import { render } from 'test-utils/render'
 

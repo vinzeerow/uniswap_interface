@@ -1,4 +1,4 @@
-import { Price, Token } from '@phuphamdeltalabs/sdkcore'
+import { Price, Token } from '@tpvinh/sdk-core'
 import {
   encodeSqrtRatioX96,
   FeeAmount,
@@ -6,7 +6,7 @@ import {
   priceToClosestTick,
   TICK_SPACINGS,
   TickMath,
-} from '@phuphamdeltalabs/v3sdk'
+} from '@tpvinh/v3-sdk'
 import JSBI from 'jsbi'
 
 export function tryParsePrice(baseToken?: Token, quoteToken?: Token, value?: string) {

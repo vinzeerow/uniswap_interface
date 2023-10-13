@@ -1,4 +1,4 @@
-import { ChainId } from '@phuphamdeltalabs/sdkcore'
+import { ChainId } from '@tpvinh/sdk-core'
 import useHttpLocations from 'hooks/useHttpLocations'
 import { useMemo } from 'react'
 import { isAddress } from 'utils'

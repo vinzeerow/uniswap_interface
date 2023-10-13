@@ -1,5 +1,5 @@
-import { Token } from '@phuphamdeltalabs/sdkcore'
-import { tickToPrice } from '@phuphamdeltalabs/v3sdk'
+import { Token } from '@tpvinh/sdk-core'
+import { tickToPrice } from '@tpvinh/v3-sdk'
 import { TickProcessed } from 'hooks/usePoolTickData'
 import JSBI from 'jsbi'
 

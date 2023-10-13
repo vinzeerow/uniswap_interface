@@ -1,4 +1,4 @@
-import { Percent } from '@phuphamdeltalabs/sdkcore'
+import { Percent } from '@tpvinh/sdk-core'
 
 const PRECISION = 10000
 export function computeFiatValuePriceImpact(

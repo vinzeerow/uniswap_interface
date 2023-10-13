@@ -1,7 +1,7 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { formatEther, parseEther } from '@ethersproject/units'
 import { t, Trans } from '@lingui/macro'
-import { ChainId, Currency, CurrencyAmount, Token } from '@phuphamdeltalabs/sdkcore'
+import { ChainId, Currency, CurrencyAmount, Token } from '@tpvinh/sdk-core'
 import { BrowserEvent, InterfaceElementName, NFTEventName } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
 import { sendAnalyticsEvent, TraceEvent } from 'analytics'

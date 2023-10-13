@@ -1,4 +1,4 @@
-import { ChainId, WETH9 } from '@phuphamdeltalabs/sdkcore'
+import { ChainId, WETH9 } from '@tpvinh/sdk-core'
 
 import { ARB, UNI } from '../../src/constants/tokens'
 import { getTestSelector } from '../utils'

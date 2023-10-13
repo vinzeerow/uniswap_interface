@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import type { TransactionResponse } from '@ethersproject/providers'
-import { UNISWAP_NFT_AIRDROP_CLAIM_ADDRESS } from '@phuphamdeltalabs/sdkcore'
+import { UNISWAP_NFT_AIRDROP_CLAIM_ADDRESS } from '@tpvinh/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import uniswapNftAirdropClaim from 'abis/uniswap-nft-airdrop-claim.json'
 import airdropBackgroundv2 from 'assets/images/airdopBackground.png'

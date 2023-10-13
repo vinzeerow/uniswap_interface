@@ -1,3 +1,3 @@
-import { Token } from '@phuphamdeltalabs/sdkcore'
+import { Token } from '@tpvinh/sdk-core'
 
 export class UserAddedToken extends Token {}

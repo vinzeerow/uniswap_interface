@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { Currency, CurrencyAmount, Fraction, Percent } from '@phuphamdeltalabs/sdkcore'
+import { Currency, CurrencyAmount, Fraction, Percent } from '@tpvinh/sdk-core'
 import { Text } from 'rebass'
 
 import { ButtonPrimary } from '../../components/Button'

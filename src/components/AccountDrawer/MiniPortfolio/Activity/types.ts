@@ -1,4 +1,4 @@
-import { ChainId, Currency } from '@phuphamdeltalabs/sdkcore'
+import { ChainId, Currency } from '@tpvinh/sdk-core'
 import { TransactionStatus } from 'graphql/data/__generated__/types-and-hooks'
 import { UniswapXOrderStatus } from 'lib/hooks/orders/types'
 

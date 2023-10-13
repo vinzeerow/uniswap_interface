@@ -1,4 +1,4 @@
-import { NativeCurrency, Token } from '@phuphamdeltalabs/sdkcore'
+import { NativeCurrency, Token } from '@tpvinh/sdk-core'
 import { TokenInfo } from '@uniswap/token-lists'
 
 import { isAddress } from '../../../utils'

@@ -1,4 +1,4 @@
-import { ChainId, Currency, Token } from '@phuphamdeltalabs/sdkcore'
+import { ChainId, Currency, Token } from '@tpvinh/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import { getChainInfo } from 'constants/chainInfo'
 import { DEFAULT_INACTIVE_LIST_URLS, DEFAULT_LIST_OF_LISTS } from 'constants/lists'

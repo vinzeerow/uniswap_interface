@@ -1,4 +1,4 @@
-import { Currency } from '@phuphamdeltalabs/sdkcore'
+import { Currency } from '@tpvinh/sdk-core'
 import { MaxUint256 } from '@uniswap/permit2-sdk'
 import ERC20_ABI from 'abis/erc20.json'
 import { Erc20, Weth } from 'abis/types'

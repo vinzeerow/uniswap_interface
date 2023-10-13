@@ -1,4 +1,4 @@
-import { TradeType } from '@phuphamdeltalabs/sdkcore'
+import { TradeType } from '@tpvinh/sdk-core'
 
 import { VoteOption } from '../governance/types'
 

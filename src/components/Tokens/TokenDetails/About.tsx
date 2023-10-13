@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { ChainId } from '@phuphamdeltalabs/sdkcore'
+import { ChainId } from '@tpvinh/sdk-core'
 import { getChainInfo } from 'constants/chainInfo'
 import { darken } from 'polished'
 import { useState } from 'react'

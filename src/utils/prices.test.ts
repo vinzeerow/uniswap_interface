@@ -1,7 +1,7 @@
-import { Trade } from '@phuphamdeltalabs/router-sdk'
-import { CurrencyAmount, Percent, TradeType } from '@phuphamdeltalabs/sdkcore'
-import { Pair, Route as V2Route } from '@phuphamdeltalabs/v2-sdk'
-import { Route as V3Route } from '@phuphamdeltalabs/v3sdk'
+import { Trade } from '@tpvinh/router-sdk'
+import { CurrencyAmount, Percent, TradeType } from '@tpvinh/sdk-core'
+import { Pair, Route as V2Route } from '@tpvinh/v2-sdk'
+import { Route as V3Route } from '@tpvinh/v3-sdk'
 import JSBI from 'jsbi'
 import {
   TEST_POOL_12,

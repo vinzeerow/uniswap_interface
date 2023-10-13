@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { Percent } from '@phuphamdeltalabs/sdkcore'
-import { DutchOrder, DutchOrderBuilder } from '@phuphamdeltalabs/uniswapx-sdk'
+import { Percent } from '@tpvinh/sdk-core'
+import { DutchOrder, DutchOrderBuilder } from '@tpvinh/uniswapx-sdk'
 import * as Sentry from '@sentry/react'
 import { SwapEventName } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'

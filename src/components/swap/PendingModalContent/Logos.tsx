@@ -1,4 +1,4 @@
-import { Currency } from '@phuphamdeltalabs/sdkcore'
+import { Currency } from '@tpvinh/sdk-core'
 import { ReactComponent as PapersIcon } from 'assets/svg/papers-text.svg'
 import { LoaderV3 } from 'components/Icons/LoadingSpinner'
 import CurrencyLogo from 'components/Logo/CurrencyLogo'

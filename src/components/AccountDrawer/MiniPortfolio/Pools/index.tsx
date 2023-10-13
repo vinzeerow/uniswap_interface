@@ -1,5 +1,5 @@
 import { t } from '@lingui/macro'
-import { Position } from '@phuphamdeltalabs/v3sdk'
+import { Position } from '@tpvinh/v3-sdk'
 import { BrowserEvent, InterfaceElementName, SharedEventName } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
 import { TraceEvent } from 'analytics'

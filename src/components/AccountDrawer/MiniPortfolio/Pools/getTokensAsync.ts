@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@phuphamdeltalabs/sdkcore'
+import { ChainId, Token } from '@tpvinh/sdk-core'
 import ERC20_ABI from 'abis/erc20.json'
 import { Erc20Interface } from 'abis/types/Erc20'
 import { Erc20Bytes32Interface } from 'abis/types/Erc20Bytes32'

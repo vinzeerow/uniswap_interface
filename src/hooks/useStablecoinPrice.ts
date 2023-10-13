@@ -1,4 +1,4 @@
-import { ChainId, Currency, CurrencyAmount, Price, Token, TradeType } from '@phuphamdeltalabs/sdkcore'
+import { ChainId, Currency, CurrencyAmount, Price, Token, TradeType } from '@tpvinh/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import tryParseCurrencyAmount from 'lib/utils/tryParseCurrencyAmount'
 import { useMemo, useRef } from 'react'

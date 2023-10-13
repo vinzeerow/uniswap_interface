@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { Currency, Percent, TradeType } from '@phuphamdeltalabs/sdkcore'
+import { Currency, Percent, TradeType } from '@tpvinh/sdk-core'
 import Column, { AutoColumn } from 'components/Column'
 import { useLocalCurrencyPrice } from 'hooks/useLocalCurrencyPrice'
 import { InterfaceTrade } from 'state/routing/types'

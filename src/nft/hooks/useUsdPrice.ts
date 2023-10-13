@@ -1,5 +1,5 @@
 import { formatEther } from '@ethersproject/units'
-import { ChainId } from '@phuphamdeltalabs/sdkcore'
+import { ChainId } from '@tpvinh/sdk-core'
 import { useLocalCurrencyPrice } from 'hooks/useLocalCurrencyPrice'
 import useNativeCurrency from 'lib/hooks/useNativeCurrency'
 import tryParseCurrencyAmount from 'lib/utils/tryParseCurrencyAmount'

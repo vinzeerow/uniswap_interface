@@ -1,4 +1,4 @@
-import { CurrencyAmount, Percent, Price } from '@phuphamdeltalabs/sdkcore'
+import { CurrencyAmount, Percent, Price } from '@tpvinh/sdk-core'
 import { USDC_MAINNET, WBTC } from 'constants/tokens'
 import { Currency } from 'graphql/data/__generated__/types-and-hooks'
 

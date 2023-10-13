@@ -1,6 +1,6 @@
 import { MaxUint256 } from '@ethersproject/constants'
 import type { TransactionResponse } from '@ethersproject/providers'
-import { Currency, CurrencyAmount, Token } from '@phuphamdeltalabs/sdkcore'
+import { Currency, CurrencyAmount, Token } from '@tpvinh/sdk-core'
 import { InterfaceEventName } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
 import { sendAnalyticsEvent } from 'analytics'

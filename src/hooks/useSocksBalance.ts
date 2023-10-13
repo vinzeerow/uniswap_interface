@@ -1,4 +1,4 @@
-import { ChainId, SOCKS_CONTROLLER_ADDRESSES, Token } from '@phuphamdeltalabs/sdkcore'
+import { ChainId, SOCKS_CONTROLLER_ADDRESSES, Token } from '@tpvinh/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import { useMemo } from 'react'
 import { useTokenBalance } from 'state/connection/hooks'

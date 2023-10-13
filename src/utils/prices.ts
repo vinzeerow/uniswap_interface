@@ -1,7 +1,7 @@
-import { Trade } from '@phuphamdeltalabs/router-sdk'
-import { Currency, CurrencyAmount, Fraction, Percent, TradeType } from '@phuphamdeltalabs/sdkcore'
-import { Pair } from '@phuphamdeltalabs/v2-sdk'
-import { FeeAmount } from '@phuphamdeltalabs/v3sdk'
+import { Trade } from '@tpvinh/router-sdk'
+import { Currency, CurrencyAmount, Fraction, Percent, TradeType } from '@tpvinh/sdk-core'
+import { Pair } from '@tpvinh/v2-sdk'
+import { FeeAmount } from '@tpvinh/v3-sdk'
 import JSBI from 'jsbi'
 import { DefaultTheme } from 'styled-components'
 

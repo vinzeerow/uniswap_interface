@@ -1,6 +1,6 @@
 import { arrayify } from '@ethersproject/bytes'
 import { parseBytes32String } from '@ethersproject/strings'
-import { ChainId, Currency, Token } from '@phuphamdeltalabs/sdkcore'
+import { ChainId, Currency, Token } from '@tpvinh/sdk-core'
 import { InterfaceEventName } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
 import { sendAnalyticsEvent } from 'analytics'

@@ -8,7 +8,7 @@ import {
   TICK_LENS_ADDRESSES,
   V2_ROUTER_ADDRESS,
   V3_MIGRATOR_ADDRESSES,
-} from '@phuphamdeltalabs/sdkcore'
+} from '@tpvinh/sdk-core'
 import { InterfaceEventName } from '@uniswap/analytics-events'
 import IUniswapV2PairJson from '@uniswap/v2-core/build/IUniswapV2Pair.json'
 import IUniswapV2Router02Json from '@uniswap/v2-periphery/build/IUniswapV2Router02.json'

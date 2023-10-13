@@ -1,6 +1,6 @@
 /* eslint-disable import/no-unused-modules */
-import { ChainId, Currency, Ether, NativeCurrency, Token, UNI_ADDRESSES, WETH9 } from '@phuphamdeltalabs/sdkcore'
-import { USDC_OP_BNB } from '@phuphamdeltalabs/smart-order-router'
+import { ChainId, Currency, Ether, NativeCurrency, Token, UNI_ADDRESSES, WETH9 } from '@tpvinh/sdk-core'
+import { USDC_OP_BNB } from '@tpvinh/smart-order-router'
 import invariant from 'tiny-invariant'
 
 export const NATIVE_CHAIN_ID = 'NATIVE'

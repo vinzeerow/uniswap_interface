@@ -1,4 +1,4 @@
-import { Pool, Position } from '@phuphamdeltalabs/v3sdk'
+import { Pool, Position } from '@tpvinh/v3-sdk'
 import { usePool } from 'hooks/usePools'
 import { PositionDetails } from 'types/position'
 

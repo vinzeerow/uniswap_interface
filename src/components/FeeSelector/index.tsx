@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { Currency } from '@phuphamdeltalabs/sdkcore'
-import { FeeAmount } from '@phuphamdeltalabs/v3sdk'
+import { Currency } from '@tpvinh/sdk-core'
+import { FeeAmount } from '@tpvinh/v3-sdk'
 import { useWeb3React } from '@web3-react/core'
 import { sendEvent } from 'components/analytics'
 import { ButtonGray } from 'components/Button'

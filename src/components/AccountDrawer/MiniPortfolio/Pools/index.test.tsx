@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { ChainId, WETH9 } from '@phuphamdeltalabs/sdkcore'
-import { FeeAmount, Pool, Position } from '@phuphamdeltalabs/v3sdk'
+import { ChainId, WETH9 } from '@tpvinh/sdk-core'
+import { FeeAmount, Pool, Position } from '@tpvinh/v3-sdk'
 import { USDC_MAINNET } from 'constants/tokens'
 import { mocked } from 'test-utils/mocked'
 import { render } from 'test-utils/render'

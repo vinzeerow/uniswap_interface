@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Token } from '@phuphamdeltalabs/sdkcore'
+import { Currency, CurrencyAmount, Token } from '@tpvinh/sdk-core'
 import { useSingleCallResult } from 'lib/hooks/multicall'
 import { useMemo } from 'react'
 

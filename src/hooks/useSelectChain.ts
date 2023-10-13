@@ -1,4 +1,4 @@
-import { ChainId } from '@phuphamdeltalabs/sdkcore'
+import { ChainId } from '@tpvinh/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import { getConnection } from 'connection'
 import { didUserReject } from 'connection/utils'

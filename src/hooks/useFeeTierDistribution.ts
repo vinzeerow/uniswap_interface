@@ -1,5 +1,5 @@
-import { Currency, Token } from '@phuphamdeltalabs/sdkcore'
-import { FeeAmount } from '@phuphamdeltalabs/v3sdk'
+import { Currency, Token } from '@tpvinh/sdk-core'
+import { FeeAmount } from '@tpvinh/v3-sdk'
 import useBlockNumber from 'lib/hooks/useBlockNumber'
 import ms from 'ms'
 import { useMemo } from 'react'

@@ -1,5 +1,5 @@
 import { QueryResult } from '@apollo/client'
-import { ChainId, Currency, Token } from '@phuphamdeltalabs/sdkcore'
+import { ChainId, Currency, Token } from '@tpvinh/sdk-core'
 import * as Sentry from '@sentry/react'
 import { AVERAGE_L1_BLOCK_TIME } from 'constants/chainInfo'
 import { NATIVE_CHAIN_ID, nativeOnChain, WRAPPED_NATIVE_CURRENCY } from 'constants/tokens'

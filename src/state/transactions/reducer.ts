@@ -1,4 +1,4 @@
-import { ChainId } from '@phuphamdeltalabs/sdkcore'
+import { ChainId } from '@tpvinh/sdk-core'
 import { createSlice } from '@reduxjs/toolkit'
 
 import { SerializableTransactionReceipt, TransactionDetails, TransactionInfo } from './types'

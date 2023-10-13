@@ -1,4 +1,4 @@
-import { ChainId, Currency } from '@phuphamdeltalabs/sdkcore'
+import { ChainId, Currency } from '@tpvinh/sdk-core'
 import blankTokenUrl from 'assets/svg/blank_token.svg'
 import { ReactComponent as UnknownStatus } from 'assets/svg/contract-interaction.svg'
 import { MissingImageLogo } from 'components/Logo/AssetLogo'

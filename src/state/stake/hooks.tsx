@@ -1,6 +1,6 @@
 import { Interface } from '@ethersproject/abi'
-import { ChainId, CurrencyAmount, Token } from '@phuphamdeltalabs/sdkcore'
-import { Pair } from '@phuphamdeltalabs/v2-sdk'
+import { ChainId, CurrencyAmount, Token } from '@tpvinh/sdk-core'
+import { Pair } from '@tpvinh/v2-sdk'
 import StakingRewardsJSON from '@uniswap/liquidity-staker/build/StakingRewards.json'
 import { useWeb3React } from '@web3-react/core'
 import useCurrentBlockTimestamp from 'hooks/useCurrentBlockTimestamp'

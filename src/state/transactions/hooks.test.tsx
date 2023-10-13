@@ -1,5 +1,5 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { ChainId } from '@phuphamdeltalabs/sdkcore'
+import { ChainId } from '@tpvinh/sdk-core'
 import { PERMIT2_ADDRESS } from '@uniswap/permit2-sdk'
 import { useWeb3React } from '@web3-react/core'
 import { USDC_MAINNET } from 'constants/tokens'

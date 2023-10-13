@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { FeeAmount } from '@phuphamdeltalabs/v3sdk'
+import { FeeAmount } from '@tpvinh/v3-sdk'
 import Badge from 'components/Badge'
 import { useFeeTierDistribution } from 'hooks/useFeeTierDistribution'
 import { PoolState } from 'hooks/usePools'

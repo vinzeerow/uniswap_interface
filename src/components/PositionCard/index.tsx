@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { CurrencyAmount, Percent, Token } from '@phuphamdeltalabs/sdkcore'
-import { Pair } from '@phuphamdeltalabs/v2-sdk'
+import { CurrencyAmount, Percent, Token } from '@tpvinh/sdk-core'
+import { Pair } from '@tpvinh/v2-sdk'
 import { useWeb3React } from '@web3-react/core'
 import JSBI from 'jsbi'
 import { transparentize } from 'polished'

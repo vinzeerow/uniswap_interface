@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { ChainId } from '@phuphamdeltalabs/sdkcore'
+import { ChainId } from '@tpvinh/sdk-core'
 import { InterfaceSectionName, NavBarSearchTypes } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
 import { useTrace } from 'analytics'

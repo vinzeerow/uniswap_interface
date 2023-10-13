@@ -1,5 +1,5 @@
-import { Token } from '@phuphamdeltalabs/sdkcore'
-import { FeeAmount, TICK_SPACINGS } from '@phuphamdeltalabs/v3sdk'
+import { Token } from '@tpvinh/sdk-core'
+import { FeeAmount, TICK_SPACINGS } from '@tpvinh/v3-sdk'
 import { TickData } from 'graphql/thegraph/AllV3TicksQuery'
 import { TickProcessed } from 'hooks/usePoolTickData'
 import JSBI from 'jsbi'

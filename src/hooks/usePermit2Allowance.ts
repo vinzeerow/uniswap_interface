@@ -1,4 +1,4 @@
-import { CurrencyAmount, Token } from '@phuphamdeltalabs/sdkcore'
+import { CurrencyAmount, Token } from '@tpvinh/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import { AVERAGE_L1_BLOCK_TIME } from 'constants/chainInfo'
 import { PermitSignature, usePermitAllowance, useUpdatePermitAllowance } from 'hooks/usePermitAllowance'

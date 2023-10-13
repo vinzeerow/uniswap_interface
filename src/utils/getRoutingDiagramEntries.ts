@@ -1,7 +1,7 @@
-import { Protocol } from '@phuphamdeltalabs/router-sdk'
-import { Currency, Percent, TradeType } from '@phuphamdeltalabs/sdkcore'
-import { Pair } from '@phuphamdeltalabs/v2-sdk'
-import { FeeAmount } from '@phuphamdeltalabs/v3sdk'
+import { Protocol } from '@tpvinh/router-sdk'
+import { Currency, Percent, TradeType } from '@tpvinh/sdk-core'
+import { Pair } from '@tpvinh/v2-sdk'
+import { FeeAmount } from '@tpvinh/v3-sdk'
 import { ClassicTrade } from 'state/routing/types'
 
 export interface RoutingDiagramEntry {

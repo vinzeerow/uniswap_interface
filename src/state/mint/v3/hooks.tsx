@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { Currency, CurrencyAmount, Price, Rounding, Token } from '@phuphamdeltalabs/sdkcore'
+import { Currency, CurrencyAmount, Price, Rounding, Token } from '@tpvinh/sdk-core'
 import {
   encodeSqrtRatioX96,
   FeeAmount,
@@ -10,7 +10,7 @@ import {
   TICK_SPACINGS,
   TickMath,
   tickToPrice,
-} from '@phuphamdeltalabs/v3sdk'
+} from '@tpvinh/v3-sdk'
 import { useWeb3React } from '@web3-react/core'
 import { usePool } from 'hooks/usePools'
 import JSBI from 'jsbi'

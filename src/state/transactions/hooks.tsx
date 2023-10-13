@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import type { TransactionResponse } from '@ethersproject/providers'
-import { ChainId, SUPPORTED_CHAINS, Token } from '@phuphamdeltalabs/sdkcore'
+import { ChainId, SUPPORTED_CHAINS, Token } from '@tpvinh/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import { getTransactionStatus } from 'components/AccountDrawer/MiniPortfolio/Activity/parseLocal'
 import { TransactionStatus } from 'graphql/data/__generated__/types-and-hooks'

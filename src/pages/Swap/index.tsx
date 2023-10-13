@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { ChainId, Currency, CurrencyAmount, Percent, Token } from '@phuphamdeltalabs/sdkcore'
-import { UNIVERSAL_ROUTER_ADDRESS } from '@phuphamdeltalabs/universal-router-sdk'
+import { ChainId, Currency, CurrencyAmount, Percent, Token } from '@tpvinh/sdk-core'
+import { UNIVERSAL_ROUTER_ADDRESS } from '@tpvinh/universal-router-sdk'
 import {
   BrowserEvent,
   InterfaceElementName,

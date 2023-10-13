@@ -1,5 +1,5 @@
-import { ChainId, Currency, V3_CORE_FACTORY_ADDRESSES } from '@phuphamdeltalabs/sdkcore'
-import { FeeAmount, nearestUsableTick, Pool, TICK_SPACINGS, tickToPrice } from '@phuphamdeltalabs/v3sdk'
+import { ChainId, Currency, V3_CORE_FACTORY_ADDRESSES } from '@tpvinh/sdk-core'
+import { FeeAmount, nearestUsableTick, Pool, TICK_SPACINGS, tickToPrice } from '@tpvinh/v3-sdk'
 import { useWeb3React } from '@web3-react/core'
 import { ZERO_ADDRESS } from 'constants/misc'
 import { useAllV3TicksQuery } from 'graphql/thegraph/__generated__/types-and-hooks'

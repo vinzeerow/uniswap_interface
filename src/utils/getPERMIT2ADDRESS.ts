@@ -1,4 +1,4 @@
-import { ChainId } from '@phuphamdeltalabs/sdkcore'
+import { ChainId } from '@tpvinh/sdk-core'
 import { PERMIT2_ADDRESS } from '@uniswap/permit2-sdk'
 
 export const getPERMIT2ADDRESS = (chainId?:number) => {

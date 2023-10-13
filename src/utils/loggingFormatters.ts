@@ -1,4 +1,4 @@
-import { Percent } from '@phuphamdeltalabs/sdkcore'
+import { Percent } from '@tpvinh/sdk-core'
 import { SwapPriceUpdateUserResponse } from '@uniswap/analytics-events'
 import { SwapResult } from 'hooks/useSwapCallback'
 import {

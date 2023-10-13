@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { Currency, Percent } from '@phuphamdeltalabs/sdkcore'
+import { Currency, Percent } from '@tpvinh/sdk-core'
 import {
   InterfaceEventName,
   InterfaceModalName,

@@ -1,4 +1,4 @@
-import { Percent, TradeType } from '@phuphamdeltalabs/sdkcore'
+import { Percent, TradeType } from '@tpvinh/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import { PermitSignature } from 'hooks/usePermitAllowance'
 import { useCallback } from 'react'

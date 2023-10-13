@@ -1,4 +1,4 @@
-import { ChainId } from '@phuphamdeltalabs/sdkcore'
+import { ChainId } from '@tpvinh/sdk-core'
 import { UNI } from 'constants/tokens'
 
 import { getTestSelector } from '../utils'

@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Token } from '@phuphamdeltalabs/sdkcore'
+import { Currency, CurrencyAmount, Token } from '@tpvinh/sdk-core'
 import { BrowserEvent, InterfaceElementName, InterfaceEventName } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
 import { TraceEvent } from 'analytics'

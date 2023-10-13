@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { Currency, CurrencyAmount, Percent } from '@phuphamdeltalabs/sdkcore'
-import { Position } from '@phuphamdeltalabs/v3sdk'
+import { Currency, CurrencyAmount, Percent } from '@tpvinh/sdk-core'
+import { Position } from '@tpvinh/v3-sdk'
 import { useWeb3React } from '@web3-react/core'
 import { useToken } from 'hooks/Tokens'
 import { usePool } from 'hooks/usePools'

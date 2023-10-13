@@ -1,4 +1,4 @@
-import { ChainId, CurrencyAmount, WETH9 } from '@phuphamdeltalabs/sdkcore'
+import { ChainId, CurrencyAmount, WETH9 } from '@tpvinh/sdk-core'
 
 import { getBalance, getTestSelector } from '../../utils'
 

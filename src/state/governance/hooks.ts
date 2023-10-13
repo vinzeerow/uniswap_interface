@@ -13,7 +13,7 @@ import {
   GOVERNANCE_ALPHA_V1_ADDRESSES,
   GOVERNANCE_BRAVO_ADDRESSES,
   Token,
-} from '@phuphamdeltalabs/sdkcore'
+} from '@tpvinh/sdk-core'
 import GovernorAlphaJSON from '@uniswap/governance/build/GovernorAlpha.json'
 import UniJSON from '@uniswap/governance/build/Uni.json'
 import { useWeb3React } from '@web3-react/core'

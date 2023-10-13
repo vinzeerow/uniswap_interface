@@ -1,5 +1,5 @@
 import { Plural, Trans } from '@lingui/macro'
-import { Percent, TradeType } from '@phuphamdeltalabs/sdkcore'
+import { Percent, TradeType } from '@tpvinh/sdk-core'
 import { InterfaceElementName, SwapEventName } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
 import { sendAnalyticsEvent } from 'analytics'

@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Percent, Price } from '@phuphamdeltalabs/sdkcore'
+import { Currency, CurrencyAmount, Percent, Price } from '@tpvinh/sdk-core'
 import {
   DEFAULT_LOCAL_CURRENCY,
   LOCAL_CURRENCY_SYMBOL_DISPLAY_TYPE,

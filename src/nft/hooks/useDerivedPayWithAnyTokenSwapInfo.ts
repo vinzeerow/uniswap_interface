@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, NativeCurrency, Percent, Token, TradeType } from '@phuphamdeltalabs/sdkcore'
+import { Currency, CurrencyAmount, NativeCurrency, Percent, Token, TradeType } from '@tpvinh/sdk-core'
 import useAutoSlippageTolerance from 'hooks/useAutoSlippageTolerance'
 import { useDebouncedTrade } from 'hooks/useDebouncedTrade'
 import { useMemo } from 'react'

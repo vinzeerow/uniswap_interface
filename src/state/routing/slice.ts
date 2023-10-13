@@ -1,5 +1,5 @@
-import { Protocol } from '@phuphamdeltalabs/router-sdk'
-import { TradeType } from '@phuphamdeltalabs/sdkcore'
+import { Protocol } from '@tpvinh/router-sdk'
+import { TradeType } from '@tpvinh/sdk-core'
 import { createApi, fetchBaseQuery, FetchBaseQueryError } from '@reduxjs/toolkit/query/react'
 import { sendAnalyticsEvent } from 'analytics'
 import { isUniswapXSupportedChain } from 'constants/chains'

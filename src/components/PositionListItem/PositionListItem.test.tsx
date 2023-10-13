@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { ChainId, Token, WETH9 } from '@phuphamdeltalabs/sdkcore'
-import { FeeAmount, Pool } from '@phuphamdeltalabs/v3sdk'
+import { ChainId, Token, WETH9 } from '@tpvinh/sdk-core'
+import { FeeAmount, Pool } from '@tpvinh/v3-sdk'
 import { USDC_MAINNET } from 'constants/tokens'
 import { useToken } from 'hooks/Tokens'
 import { PoolState } from 'hooks/usePools'

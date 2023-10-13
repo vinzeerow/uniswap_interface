@@ -1,5 +1,5 @@
 import { ContractTransaction } from '@ethersproject/contracts'
-import { CurrencyAmount, MaxUint256, Token } from '@phuphamdeltalabs/sdkcore'
+import { CurrencyAmount, MaxUint256, Token } from '@tpvinh/sdk-core'
 import { InterfaceEventName } from '@uniswap/analytics-events'
 import { sendAnalyticsEvent, useTrace } from 'analytics'
 import { useTokenContract } from 'hooks/useContract'

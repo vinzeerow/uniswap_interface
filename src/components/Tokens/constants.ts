@@ -1,4 +1,4 @@
-import { ChainId } from '@phuphamdeltalabs/sdkcore'
+import { ChainId } from '@tpvinh/sdk-core'
 
 export const MAX_WIDTH_MEDIA_BREAKPOINT = '1200px'
 export const XLARGE_MEDIA_BREAKPOINT = '960px'

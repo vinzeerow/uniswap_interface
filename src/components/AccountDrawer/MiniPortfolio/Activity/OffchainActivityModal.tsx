@@ -1,5 +1,5 @@
 import { t, Trans } from '@lingui/macro'
-import { CurrencyAmount, TradeType } from '@phuphamdeltalabs/sdkcore'
+import { CurrencyAmount, TradeType } from '@tpvinh/sdk-core'
 import { ReactComponent as ErrorContent } from 'assets/svg/uniswapx_error.svg'
 import Column, { AutoColumn } from 'components/Column'
 import { OpacityHoverState } from 'components/Common'

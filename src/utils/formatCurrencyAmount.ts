@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Fraction } from '@phuphamdeltalabs/sdkcore'
+import { Currency, CurrencyAmount, Fraction } from '@tpvinh/sdk-core'
 import { DEFAULT_LOCALE, SupportedLocale } from 'constants/locales'
 import JSBI from 'jsbi'
 import formatLocaleNumber from 'lib/utils/formatLocaleNumber'

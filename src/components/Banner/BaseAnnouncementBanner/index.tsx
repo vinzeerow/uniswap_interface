@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { ChainId } from '@phuphamdeltalabs/sdkcore'
+import { ChainId } from '@tpvinh/sdk-core'
 import { InterfaceElementName } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
 import { ReactComponent as AppleLogo } from 'assets/svg/apple_logo.svg'

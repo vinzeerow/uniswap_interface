@@ -1,4 +1,4 @@
-import { Percent } from '@phuphamdeltalabs/sdkcore'
+import { Percent } from '@tpvinh/sdk-core'
 import store from 'state'
 import { updateUserSlippageTolerance } from 'state/user/reducer'
 import { SlippageTolerance } from 'state/user/types'

@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { ChainId } from '@phuphamdeltalabs/sdkcore'
+import { ChainId } from '@tpvinh/sdk-core'
 import { InterfacePageName, NFTEventName } from '@uniswap/analytics-events'
 import { sendAnalyticsEvent, useTrace } from 'analytics'
 import { MouseoverTooltip } from 'components/Tooltip'

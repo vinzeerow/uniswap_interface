@@ -1,4 +1,4 @@
-import { Percent } from '@phuphamdeltalabs/sdkcore'
+import { Percent } from '@tpvinh/sdk-core'
 import { PermitInput, TokenTradeRoutesInput, TokenTradeType } from 'graphql/data/__generated__/types-and-hooks'
 import { Allowance } from 'hooks/usePermit2Allowance'
 import { buildAllTradeRouteInputs } from 'nft/utils/tokenRoutes'

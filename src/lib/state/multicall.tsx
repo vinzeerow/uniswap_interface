@@ -1,4 +1,4 @@
-import { ChainId } from '@phuphamdeltalabs/sdkcore'
+import { ChainId } from '@tpvinh/sdk-core'
 import { createMulticall, ListenerOptions } from '@uniswap/redux-multicall'
 import { useWeb3React } from '@web3-react/core'
 import { useInterfaceMulticall, useMainnetInterfaceMulticall } from 'hooks/useContract'
